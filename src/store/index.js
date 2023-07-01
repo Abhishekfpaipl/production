@@ -8,105 +8,105 @@ export default createStore({
         img: 'img/fabric/fab1.png',
         style: '01-20-23188',
         qty: '1000',
-        ready:'200',
-        order:'100',
-        shipped:'100',
-        delivered:'100',
-        total:'1000',
-        bal:'900',
-        color:'5',
-        size:'3',
+        ready: '200',
+        order: '100',
+        shipped: '100',
+        delivered: '100',
+        total: '1000',
+        bal: '900',
+        color: '5',
+        size: '3',
         status: 'New Order Posted',
-        date:'15/05/23',
-        time:'06:30 pm'
+        date: '15/05/23',
+        time: '06:30 pm'
       },
       {
         id: 2,
         img: 'img/fabric/fab2.png',
         style: '01-20-23188',
         qty: '1000',
-        ready:'600',
-        order:'100',
-        shipped:'100',
-        delivered:'100',
-        total:'1000',
-        bal:'900',
-        color:'5',
-        size:'3',
+        ready: '600',
+        order: '100',
+        shipped: '100',
+        delivered: '100',
+        total: '1000',
+        bal: '900',
+        color: '5',
+        size: '3',
         status: 'Fabricator has Accepted the order',
-        date:'15/05/23',
-        time:'06:30 pm'
+        date: '15/05/23',
+        time: '06:30 pm'
       },
       {
         id: 3,
         img: 'img/fabric/fab3.png',
         style: '01-20-23188',
         qty: '1000',
-        ready:'500',
-        order:'100',
-        shipped:'100',
-        delivered:'100',
-        total:'1000',
-        bal:'900',
-        color:'9',
-        size:'1',
+        ready: '500',
+        order: '100',
+        shipped: '100',
+        delivered: '100',
+        total: '1000',
+        bal: '900',
+        color: '9',
+        size: '1',
         status: 'Monaal Creation Accepted Order',
-        date:'15/05/23',
-        time:'06:30 pm'
+        date: '15/05/23',
+        time: '06:30 pm'
       },
       {
         id: 4,
         img: 'img/fabric/fab4.png',
         style: '01-20-23188',
         qty: '1000',
-        ready:'300',
-        order:'100',
-        shipped:'100',
-        delivered:'100',
-        total:'1000',
-        bal:'900',
-        color:'5',
-        size:'8',
+        ready: '300',
+        order: '100',
+        shipped: '100',
+        delivered: '100',
+        total: '1000',
+        bal: '900',
+        color: '5',
+        size: '8',
         status: 'Fabric is Available at Monaal',
-        date:'15/05/23',
-        time:'06:30 pm'
+        date: '15/05/23',
+        time: '06:30 pm'
       },
       {
         id: 5,
         img: 'img/fabric/fab5.png',
         style: '01-20-23188',
         qty: '1000',
-        ready:'822',
-        order:'100',
-        shipped:'100',
-        delivered:'100',
-        total:'1000',
-        bal:'900',
-        color:'7',
-        size:'6',
+        ready: '822',
+        order: '100',
+        shipped: '100',
+        delivered: '100',
+        total: '1000',
+        bal: '900',
+        color: '7',
+        size: '6',
         status: 'Fabric Arranged For Delivery',
-        date:'15/05/23',
-        time:'06:30 pm'
+        date: '15/05/23',
+        time: '06:30 pm'
       },
       {
         id: 6,
         img: 'img/fabric/fab6.png',
         style: '01-20-23188',
         qty: '1000',
-        ready:'500',
-        order:'100',
-        shipped:'100',
-        delivered:'100',
-        total:'1000',
-        bal:'900',
-        color:'8',
-        size:'2',
+        ready: '500',
+        order: '100',
+        shipped: '100',
+        delivered: '100',
+        total: '1000',
+        bal: '900',
+        color: '8',
+        size: '2',
         status: 'Fabric Received',
-        date:'15/05/23',
-        time:'06:30 pm'
+        date: '15/05/23',
+        time: '06:30 pm'
       },
     ],
-    activeReadyOrder:{},
+    activeReadyOrder: {},
     inward: [
       {
         id: 1,
@@ -158,7 +158,21 @@ export default createStore({
         name: 'Cheese Fabric',
         stock: '10000',
         price: '100',
-        status: 'Accept'
+        colors: [
+          { id: 1, name: 'black', img: "img/fabric/fab1.png" },
+          { id: 2, name: 'red', img: "img/fabric/fab2.png" },
+          { id: 2, name: 'white', img: "img/fabric/fab3.png" },
+          { id: 2, name: 'green', img: "img/fabric/fab4.png" },
+          { id: 2, name: 'purple', img: "img/fabric/fab5.png" },
+        ],
+        sizes: [
+          { id: 1, name: 'S' },
+          { id: 2, name: 'M' },
+          { id: 3, name: 'L' },
+          { id: 4, name: 'F' },
+          { id: 5, name: 'XL' },
+        ],
+        // status: 'Accept'
       },
       {
         id: 2,
@@ -166,7 +180,7 @@ export default createStore({
         name: 'Crepe Fabric',
         stock: '10000',
         price: '100',
-        status: 'Running'
+        // status: 'Running'
       },
       {
         id: 3,
@@ -174,7 +188,7 @@ export default createStore({
         name: 'Georgette Fabric',
         stock: '10000',
         price: '150',
-        status: 'Running'
+        // status: 'Running'
       },
       {
         id: 4,
@@ -182,7 +196,7 @@ export default createStore({
         name: 'Cotton Duck',
         stock: '10000',
         price: '150',
-        status: 'Hold'
+        // status: 'Hold'
       },
       {
         id: 5,
@@ -190,7 +204,7 @@ export default createStore({
         name: 'Georgette Fabric',
         stock: '10000',
         price: '150',
-        status: 'Hold'
+        // status: 'Hold'
       },
       {
         id: 6,
@@ -198,9 +212,10 @@ export default createStore({
         name: 'Cotton Duck',
         stock: '10000',
         price: '150',
-        status: 'Finished'
+        // status: 'Finished'
       },
     ],
+    activeCuttingOrder: {},
     productionOrder: [
       {
         id: 1,
@@ -492,10 +507,10 @@ export default createStore({
 
   },
   getters: {
-    getOrder(state){
+    getOrder(state) {
       return state.order
     },
-    getActiveReadyOrder(state){
+    getActiveReadyOrder(state) {
       return state.activeReadyOrder
     },
     getInward(state) {
@@ -503,6 +518,9 @@ export default createStore({
     },
     getCutting(state) {
       return state.cutting
+    },
+    getActiveCuttingOrder(state) {
+      return state.activeCuttingOrder
     },
     getProductionOrder(state) {
       return state.productionOrder
@@ -525,19 +543,31 @@ export default createStore({
 
   },
   mutations: {
-    selectReadyOrder(state, order){
-      state.activeReadyOrder = order
+    selectReadyOrder(state, order) {
+      state.activeReadyOrder = order;
     },
-    hideReadyOrder(state){
-      state.activeReadyOrder = {}
+    hideReadyOrder(state) {
+      state.activeReadyOrder = {};
+    },
+    selectCuttingOrder(state, cutting) {
+      state.activeCuttingOrder = cutting;
+    },
+    hideCuttingOrder(state) {
+      state.activeCuttingOrder = {};
     }
   },
   actions: {
-    selectReadyOrder({commit},order){
+    selectReadyOrder({ commit }, order) {
       commit('selectReadyOrder', order)
     },
-    hideReadyOrder({commit}){
+    hideReadyOrder({ commit }) {
       commit('hideReadyOrder')
+    },
+    selectCuttingOrder({ commit }, cutting) {
+      commit('selectCuttingOrder', cutting)
+    },
+    hideCuttingOrder({ commit }) {
+      commit('hideCuttingOrder')
     }
   },
   modules: {},

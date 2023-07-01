@@ -16,7 +16,7 @@
 
             <div class="d-flex flex-column align-items-center">
                 <i class="bi bi-layers fs-3"></i>
-                <p class="m-0" style="font-size:12px ;">Fabric</p>
+                <p class="m-0" style="font-size:12px ;">Store</p>
             </div>
         </router-link>
 

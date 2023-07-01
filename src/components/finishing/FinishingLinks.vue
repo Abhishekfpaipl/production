@@ -1,22 +1,30 @@
 <template>
+    <div class="container d-flex justify-content-between align-items-center bg-light"
+        style="height: 63px !important;box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;">
+        <div class="">
+            <i class="bi bi-list fs-1"></i>
+        </div>
+        <div class="">
+            <h3>Finishing</h3>
+        </div>
+    </div>
     <div class="nav nav-tabs py-2 d-flex overflow-x-scroll flex-nowrap ws-nowarp align-items-center"
-        style="font-size: 10px; height: 63px; font-weight: 500;"
-        id="nav-tab" role="tablist">
+        style="font-size: 10px; height: 63px; font-weight: 500;" id="nav-tab" role="tablist">
         <router-link class="nav-link ws-nowarp" :to="{ name: 'Finishing-Order' }"
             :class="currentRouteName('Finishing-Order') ? 'active' : ''">Order
         </router-link>
 
-         <router-link class="nav-link ws-nowarp" :to="{ name: 'Finishing-Finishing-Threading' }"
+        <router-link class="nav-link ws-nowarp" :to="{ name: 'Finishing-Finishing-Threading' }"
             :class="currentRouteName('Finishing-Finishing-Threading') ? 'active' : ''">Stiching</router-link>
 
-    <!--    <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Job-Threading' }"
+        <!--    <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Job-Threading' }"
             :class="currentRouteName ('Production-Job-Threading') ? 'active' : ''">Job
             Work</router-link>
 
          <router-link class="nav-link ws-nowarp " :to="{name:'Production-Material-One'}"
             :class="currentRouteName('Production-Material-One') ? 'active' : ''">Material</router-link> -->
 
-      <!--     <router-link class="nav-link ws-nowarp " to="overheads"
+        <!--     <router-link class="nav-link ws-nowarp " to="overheads"
             :class="active === 'Overheads' ? 'active' : ''">Overheads</router-link>
 
         <router-link class="nav-link ws-nowarp " to="finishing"
