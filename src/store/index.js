@@ -5,7 +5,7 @@ export default createStore({
     order: [
       {
         id: 1,
-        img: 'img/fabric/fab1.png',
+        img: 'img/catalog/img1.jpg',
         style: '01-20-23188',
         qty: '1000',
         ready: '200',
@@ -22,7 +22,7 @@ export default createStore({
       },
       {
         id: 2,
-        img: 'img/fabric/fab2.png',
+        img: 'img/catalog/img2.jpg',
         style: '01-20-23188',
         qty: '1000',
         ready: '600',
@@ -39,7 +39,7 @@ export default createStore({
       },
       {
         id: 3,
-        img: 'img/fabric/fab3.png',
+        img: 'img/catalog/img3.jpg',
         style: '01-20-23188',
         qty: '1000',
         ready: '500',
@@ -56,7 +56,7 @@ export default createStore({
       },
       {
         id: 4,
-        img: 'img/fabric/fab4.png',
+        img: 'img/catalog/img4.jpg',
         style: '01-20-23188',
         qty: '1000',
         ready: '300',
@@ -73,7 +73,7 @@ export default createStore({
       },
       {
         id: 5,
-        img: 'img/fabric/fab5.png',
+        img: 'img/catalog/img5.jpg',
         style: '01-20-23188',
         qty: '1000',
         ready: '822',
@@ -90,7 +90,7 @@ export default createStore({
       },
       {
         id: 6,
-        img: 'img/fabric/fab6.png',
+        img: 'img/catalog/img6.jpg',
         style: '01-20-23188',
         qty: '1000',
         ready: '500',
