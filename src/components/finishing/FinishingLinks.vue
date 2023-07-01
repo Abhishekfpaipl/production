@@ -15,7 +15,7 @@
         </router-link>
 
         <router-link class="nav-link ws-nowarp" :to="{ name: 'Finishing-Finishing-Threading' }"
-            :class="currentRouteName('Finishing-Finishing-Threading') ? 'active' : ''">Stiching</router-link>
+            :class="currentRouteName('Finishing-Finishing') ? 'active' : ''">Stiching</router-link>
 
         <!--    <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Job-Threading' }"
             :class="currentRouteName ('Production-Job-Threading') ? 'active' : ''">Job

@@ -2,14 +2,13 @@
     <div class="d-flex justify-content-evenly align-items-center bg-light w-100"
         style="position:fixed;bottom: 0;height:65px;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
 
-        <router-link to="/order/new" :class="{ 'text-danger': currentRoute === 'Order-New' }"
-            class="text-decoration-none">
+        <router-link to="/order/new" :class="{ 'text-danger': currentRoute === 'Order-New' }" class="text-decoration-none">
             <div class="d-flex flex-column align-items-center">
                 <i class="bi bi-bookmark-plus fs-3"></i>
                 <p class="m-0" style="font-size:12px ;">Orders</p>
             </div>
         </router-link>
-        
+
 
         <router-link to="/store/inward" :class="{ 'text-danger': currentRoute === 'Store-Inward' }"
             class="text-decoration-none ">
@@ -55,6 +54,12 @@ export default {
             return this.$route.name;
         }
     },
+    // methods: {
+    //     currentRouteName(routeName) {
+    //         return this.$route.name.includes(routeName);
+    //     }
+
+    // }
 }
 </script>
 

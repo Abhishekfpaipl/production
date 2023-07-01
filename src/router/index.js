@@ -88,7 +88,7 @@ const routes = [
         component:() => import('@/components/production/OrderPage.vue')
       },
       {
-        path:'/production/stiching',
+        path:'stiching',
         name:'Production-Stiching',
         children:[
           {

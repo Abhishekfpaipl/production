@@ -1,8 +1,8 @@
 <template>
-     <div class="container d-flex justify-content-between align-items-center bg-light"
+    <div class="container d-flex justify-content-between align-items-center bg-light"
         style="height: 63px !important;box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;">
         <div class="">
-           <i class="bi bi-list fs-1"></i>
+            <i class="bi bi-list fs-1"></i>
         </div>
         <div class="">
             <h3>Production</h3>
@@ -15,17 +15,17 @@
             :class="currentRouteName('Production-Order') ? 'active' : ''">Order
         </RouterLink>
 
-        
+
 
         <router-link class="nav-link ws-nowarp" :to="{ name: 'Production-Stiching-Single' }"
-            :class="currentRouteName('Production-Stiching-Single') ? 'active' : ''">Stiching</router-link>
+            :class="currentRouteName('Production-Stiching') ? 'active' : ''">Stiching</router-link>
 
         <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Job-Threading' }"
-            :class="currentRouteName('Production-Job-Threading') ? 'active' : ''">Job
+            :class="currentRouteName('Production-Job') ? 'active' : ''">Job
             Work</router-link>
 
         <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Material-One' }"
-            :class="currentRouteName('Production-Material-One') ? 'active' : ''">Material</router-link>
+            :class="currentRouteName('Production-Material') ? 'active' : ''">Material</router-link>
 
         <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Overheads' }"
             :class="currentRouteName('Production-Overheads') ? 'active' : ''">Overheads</router-link>

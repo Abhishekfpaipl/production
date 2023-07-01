@@ -11,23 +11,6 @@
                 </div>
             </div>
         </div>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight">Toggle right offcanvas</button>
-
-        <div v-if="Object.keys(activeOrder).length !== 0" class="">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <img :src="`${publicPath}${activeOrder.img}`" class="rounded-circle"
-                        style="height:60px;width:60px; object-fit: fill;">
-                </div>
-            </div>
-        </div>
-
         <div v-if="Object.keys(activeOrder).length !== 0" class="">
             <div class="offcanvas offcanvas-end show " data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                 aria-labelledby="staticBackdropLabel">

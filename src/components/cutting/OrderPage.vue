@@ -64,140 +64,6 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body p-0">
                                     <div class="border">
-                                        <!-- <div class="table-responsive  border-1" id="scroll"
-                                            style="font-size: 12px !important;">
-                                            <table class="table m-0">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col" class="text-center"> Qty</th>
-                                                        <th scope="col">
-                                                            <div class="d-flex flex-column">
-                                                                <p class="m-0 text-center">XS</p>
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">
-                                                            <div class="d-flex flex-column">
-                                                                <p class="m-0 text-center">S</p>
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">
-                                                            <div class="d-flex flex-column">
-                                                                <p class="m-0 text-center">M</p>
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">
-                                                            <div class="d-flex flex-column">
-                                                                <p class="m-0 text-center">L</p>
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">
-                                                            <div class="d-flex flex-column">
-                                                                <p class="m-0 text-center">XL</p>
-                                                            </div>
-                                                        </th>
-                                                        <th scope="col">
-                                                            <div class="d-flex flex-column">
-                                                                <p class="m-0 text-center">Free</p>
-                                                            </div>
-                                                        </th>
-
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row" style="font-size:14px">
-                                                            <div class="rounded-circle m-2 px-1 align-items-center justify-content-center d-flex"
-                                                                style="width: 30px; height: 30px;background-color:black">
-                                                            </div>
-                                                        </th>
-                                                        <td class="text-center">
-
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" style="font-size:14px">
-                                                            <div class="rounded-circle m-2 px-1 align-items-center justify-content-center d-flex"
-                                                                style="width: 30px; height: 30px;background-color:red">
-                                                            </div>
-                                                        </th>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                        <td class="text-center">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating" style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2">10</label>
-                                                            </form>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-
-                                        </div> -->
-
-
                                         <div class="table-responsive mt-4" id="scroll">
                                             <table class="table border border-1">
                                                 <thead>
@@ -262,52 +128,14 @@
                             <div id="collapseTwo" class="accordion-collapse collapse show"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body p-0">
-                                    <!-- <div class="table-responsive mt-4" id="scroll">
-                                        <table class="table border border-1">
-                                            <thead>
-                                                <tr>
-                                                    <th colspan="5" class="text-center">Qty</th>
-                                                    <th scope="col" v-for="(size, index) in activeOrder.sizes"
-                                                            :key="index">
-                                                            <div class="fw-bold d-flex flex-column align-items-center"
-                                                                style="">
-                                                                <p class="m-0">{{ size.name }}</p>
-                                                            </div>
-                                                        </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr v-for="(color, colorindex) in activeOrder.colors" :key="colorindex">
-                                                    <td class="">
-                                                        <div
-                                                            class="rounded-circle align-items-center justify-content-center d-flex">
-                                                            <img class="rounded-circle" :src="color.img"
-                                                                style="width: 38px; height: 38px;object-fit: fill;">
-                                                        </div>
-                                                    </td>
-
-                                                    <td v-for="(size, sizeindex) in activeOrder.sizes" :key="sizeindex">
-                                                        <div v-show="sizeindex === 0">
-                                                            <form class="form-floating">
-                                                                <input type="number" class="form-control" id="floating"
-                                                                    style="width: 55px;height:30px;font-size: 13px !important;">
-                                                                <label for="floating" class="p-0 pt-2" style="font-size: 14px;">10</label>
-                                                            </form>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div> -->
-
-                                    <div class="container border">
+                                    <div class="border">
                                         <table class="table">
                                             <thead>
                                                 <tr>
-                                                    <th>Colors</th>
-                                                    <th>Layers</th>
-                                                    <th>Cutting</th>
-                                                    <th>Parts</th>
+                                                    <th class="text-center">Colors (5)</th>
+                                                    <th class="text-center">Layers (1)</th>
+                                                    <th class="text-center">Cutting (5)</th>
+                                                    <th class="text-center">Parts (15)</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -404,11 +232,6 @@ export default {
             this.cuttingInputs[index] = layersValue * cuttingMultiplier;
             this.partsInputs[index] = layersValue * partsMultiplier;
         },
-
-        // calculateNewValues(value, multiplier) {
-        //     const newValue = value * multiplier;
-        //     return [newValue, newValue, newValue, newValue, newValue];
-        // }
     }
 }
 </script>
@@ -419,7 +242,7 @@ export default {
     display: none;
 }
 
-/* 
+
 table th:first-child,
 .table td:first-child {
     position: sticky;
@@ -427,5 +250,5 @@ table th:first-child,
     background-color: #e8e8e8;
     color: #373737;
     z-index: 10;
-} */
+}
 </style>
