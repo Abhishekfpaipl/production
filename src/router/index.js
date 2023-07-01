@@ -8,6 +8,17 @@ const routes = [
     children: []
   },      
   {
+    path: "/sign-up",
+    name: "SignupForm",
+    component:() => import('@/views/Forms/SignupForm.vue'),
+  },
+  {
+    path: "/login",
+    name: "LoginForm",
+    component:() => import('@/views/Forms/LoginForm.vue'),
+  },
+
+  {
     path:'/order',
     children:[
       {

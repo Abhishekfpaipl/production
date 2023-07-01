@@ -1,13 +1,6 @@
 <template>
-    <div class="container d-flex justify-content-between align-items-center bg-light"
-        style="height: 63px !important;box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;">
-        <div class="">
-            <i class="bi bi-list fs-1"></i>
-        </div>
-        <div class="">
-            <h3>Production</h3>
-        </div>
-    </div>
+
+   <TopNav>Production</TopNav>
     <div class="nav nav-tabs py-2 d-flex overflow-x-scroll flex-nowrap ws-nowarp align-items-center"
         style="font-size: 10px; height: 63px; font-weight: 500;" id="nav-tab" role="tablist">
 
@@ -37,27 +30,28 @@
 </template>
 
 <script>
+import TopNav from '../navbar/TopNav.vue';
 export default {
-    name: 'ProductionLinks',
+    name: "ProductionLinks",
     data() {
         return {
-            // links:[
-            //     {route:''}
-            // ]
-        }
+        // links:[
+        //     {route:''}
+        // ]
+        };
     },
-    props: ['active'],
+    props: ["active"],
     computed: {
-        // currentRouteName() {
-        //     return this.$route.name;
-        // }
+    // currentRouteName() {
+    //     return this.$route.name;
+    // }
     },
     methods: {
         currentRouteName(routeName) {
             return this.$route.name.includes(routeName);
         }
-
-    }
+    },
+    components: { TopNav }
 }
 </script>
 <style>
