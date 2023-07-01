@@ -42,17 +42,17 @@ const routes = [
     children: [
       {
         path: 'inward',
-        name: 'store-inward',
+        name: 'Store-Inward',
         component: () => import('@/components/store/InwardPage.vue'),
       },
       {
         path: 'store',
-        name: 'store-store',
+        name: 'Store-Store',
         component: () => import('@/components/store/StorePage.vue'),
       },
       {
         path: 'cutting',
-        name: 'store-cutting',
+        name: 'Store-Cutting',
         component: () => import('@/components/store/CuttingPage.vue')
       },
     ]
@@ -63,17 +63,17 @@ const routes = [
     children:[
       {
         path:'order',
-        name:'Order',
+        name:'Cutting-Order',
         component:() => import('@/components/cutting/OrderPage.vue')
       },
       {
         path:'cutting',
-        name:'cutting-cutting',
+        name:'Cutting-Cutting',
         component:() => import('@/components/cutting/CuttingPage.vue')
       },
       {
         path:'production',
-        name:'cutting-production',
+        name:'Cutting-Production',
         component:() => import('@/components/cutting/ProductionPage.vue')
       },
     ]

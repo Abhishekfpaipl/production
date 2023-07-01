@@ -248,7 +248,7 @@ export default createStore({
     stiching: [
       {
         id: 1,
-        img: 'img/order/12.jpg',
+        img: 'img/order/12.png',
         name: 'Aman Solanki',
         style: '23188',
         qty: '100',

@@ -178,7 +178,7 @@ export default {
             publicPath: process.env.BASE_URL
         }
     },
-    computed: {
+    computed: {   
         orders() {
             return this.$store.getters.getOrder;
         },
