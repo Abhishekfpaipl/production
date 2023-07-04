@@ -11,22 +11,17 @@
 
         <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Job-Threading' }"
             :class="currentRouteName('Production-Job') ? 'active' : ''">Completed </router-link>
-
-        <!-- <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Material-One' }"
-            :class="currentRouteName('Production-Material') ? 'active' : ''">Due</router-link>
-         
-
-        <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Finishing' }"
-            :class="currentRouteName('Production-Finishing') ? 'active' : ''">Finish</router-link>
-          -->
-
-    </div>
+        </div>
+        <ProductionBottomnav></ProductionBottomnav>
 </template>
 
 <script>
 import TopNav from '../navbar/TopNav.vue';
+import ProductionBottomnav from '../navbar/ProductionBottomnav.vue';
+
 export default {
     name: "ProductionLinks",
+    components: { TopNav, ProductionBottomnav },
     data() {
         return {
             // links:[
@@ -45,7 +40,7 @@ export default {
             return this.$route.name.includes(routeName);
         }
     },
-    components: { TopNav }
+    
 }
 </script>
 <style>

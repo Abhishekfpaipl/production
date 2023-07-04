@@ -104,6 +104,12 @@ const routes = [
         component:() => import('@/components/production/ProcessingPage.vue')
       },
       {
+        path:'production',
+        name:'production-production',
+        component:() => import('@/components/production/ProductionPage.vue')
+         
+      },
+      {
         path:'stiching',
         name:'Production-Stiching',
         children:[
