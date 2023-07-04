@@ -24,7 +24,7 @@ export default createStore({
         panna: '63 inc | 1.6002 Mtr',
         fc: '230 Grm',
         stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
-         
+
       },
       {
         id: 2,
@@ -42,7 +42,7 @@ export default createStore({
         status: 'Fabricator has Accepted the order',
         date: '15/05/23',
         time: '06:30 pm',
-         
+
       },
       {
         id: 3,
@@ -60,7 +60,7 @@ export default createStore({
         status: 'Monaal Creation Accepted Order',
         date: '15/05/23',
         time: '06:30 pm',
-         
+
       },
       {
         id: 4,
@@ -78,7 +78,7 @@ export default createStore({
         status: 'Fabric is Available at Monaal',
         date: '15/05/23',
         time: '06:30 pm',
-        
+
       },
       {
         id: 5,
@@ -96,7 +96,7 @@ export default createStore({
         status: 'Fabric Arranged For Delivery',
         date: '15/05/23',
         time: '06:30 pm',
-         
+
       },
       {
         id: 6,
@@ -114,7 +114,7 @@ export default createStore({
         status: 'Fabric Received',
         date: '15/05/23',
         time: '06:30 pm',
-         
+
       },
     ],
     activeReadyOrder: {},
@@ -243,7 +243,7 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assignee',
-        btn:' btn-outline-success '
+        btn: ' btn-outline-success '
       },
       {
         id: 2,
@@ -254,7 +254,7 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'In-Production',
-        btn:' btn-outline-info '
+        btn: ' btn-outline-info '
       },
       {
         id: 3,
@@ -265,7 +265,7 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'In-Fabrication',
-        btn:' btn-outline-warning '
+        btn: ' btn-outline-warning '
       },
       {
         id: 4,
@@ -276,7 +276,7 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assignee',
-        btn:' btn-outline-success '
+        btn: ' btn-outline-success '
       },
       {
         id: 5,
@@ -287,7 +287,7 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assignee',
-        btn:' btn-outline-success '
+        btn: ' btn-outline-success '
       },
       {
         id: 6,
@@ -298,7 +298,7 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assignee',
-        btn:' btn-outline-success '
+        btn: ' btn-outline-success '
       },
     ],
     stiching: [
@@ -553,83 +553,179 @@ export default createStore({
     ],
     users: [
       {
-          id: 1,
-          name: 'Kedar',
-          role: 'Creator',
-          status: 'Access Granted',
-          imgu: "img/members/jyoti.jpg"
+        id: 1,
+        name: 'Kedar',
+        role: 'Creator',
+        status: 'Access Granted',
+        dept: 'Fabricator',
+        post: 'Manager',
+        imgu: "img/members/jyoti.jpg"
       },
       {
-          id: 2,
-          name: 'Amit Sardar',
-          role: 'Admin',
-          status: 'Access Granted',
-          imgu: "img/members/Kedar.jpg"
+        id: 2,
+        name: 'Amit Sardar',
+        role: 'Admin',
+        status: 'Access Granted',
+        dept: 'Product Designer',
+        post: 'Manager',
+        imgu: "img/members/Kedar.jpg"
       },
       {
-          id: 3,
-          name: 'Dheeraj Sardar',
-          role: 'Admin',
-          status: 'Access Granted',
-          imgu: "img/members/Modern.jpg"
+        id: 3,
+        name: 'Dheeraj Sardar',
+        role: 'Admin',
+        status: 'Access Granted',
+        dept: 'Fabricator',
+        post: 'Manager',
+        imgu: "img/members/Modern.jpg"
       },
       {
-          id: 4,
-          name: 'jyoti Garments',
-          role: 'Assignee',
-          status: 'Access Granted',
-          imgu: "img/members/Narender.jpg"
+        id: 4,
+        name: 'jyoti Garments',
+        role: 'Assignee',
+        status: 'Access Granted',
+        dept: 'Product Designer',
+        post: 'Manager',
+        imgu: "img/members/Narender.jpg"
       },
       {
-          id: 4,
-          name: 'Narender',
-          role: 'Manager',
-          status: 'Access Granted',
-          imgu: "img/members/jyoti.jpg"
+        id: 4,
+        name: 'Narender',
+        role: 'Manager',
+        status: 'Access Granted',
+        dept: 'Fabricator',
+        post: 'Manager',
+        imgu: "img/members/jyoti.jpg"
       },
       {
-          id: 4,
-          name: 'Modern Collection',
-          role: 'Assignee',
-          status: 'Access Granted',
-          imgu: "img/members/Kedar.jpg"
+        id: 4,
+        name: 'Modern Collection',
+        role: 'Assignee',
+        status: 'Access Granted',
+        dept: 'Fabricator',
+        post: 'Manager',
+        imgu: "img/members/Kedar.jpg"
       },
       {
-          id: 5,
-          name: 'Adnan Siddiqui',
-          role: 'Assignee',
-          status: 'Access Granted',
-          imgu: "img/members/jyoti.jpg"
+        id: 5,
+        name: 'Adnan Siddiqui',
+        role: 'Assignee',
+        status: 'Access Granted',
+        dept: 'Fabricator',
+        post: 'Manager',
+        imgu: "img/members/jyoti.jpg"
       },
       {
-          id: 6,
-          name: 'Hari Shankar',
-          role: 'Assignee',
-          status: 'Access Granted',
-          imgu: "img/members/jyoti.jpg"
+        id: 6,
+        name: 'Hari Shankar',
+        role: 'Assignee',
+        status: 'Access Granted',
+        dept: 'Fabricator',
+        post: 'Manager',
+        imgu: "img/members/jyoti.jpg"
       },
       {
-          id: 7,
-          name: 'Hari Shankar',
-          role: 'Assignee',
-          status: 'Access Granted',
-          imgu: "img/members/jyoti.jpg"
+        id: 7,
+        name: 'Hari Shankar',
+        role: 'Assignee',
+        status: 'Access Granted',
+        dept: 'Fabricator',
+        post: 'Manager',
+        imgu: "img/members/jyoti.jpg"
       },
       {
-          id: 8,
-          name: 'Hari Shankar',
-          role: 'Assignee',
-          status: 'Access Granted',
-          imgu: "img/members/jyoti.jpg"
+        id: 8,
+        name: 'Hari Shankar',
+        role: 'Assignee',
+        status: 'Access Granted',
+        dept: 'Fabricator',
+        post: 'Manager',
+        imgu: "img/members/jyoti.jpg"
       },
       {
-          id: 9,
-          name: 'Hari Shankar',
-          role: 'Assignee',
-          status: 'Access Granted',
-          imgu: "img/members/jyoti.jpg"
+        id: 9,
+        name: 'Hari Shankar',
+        role: 'Assignee',
+        status: 'Access Granted',
+        dept: 'Fabricator',
+        post: 'Manager',
+        imgu: "img/members/jyoti.jpg"
       },
-  ],
+    ],
+    manager: [
+      {
+        id: 1,
+        img: 'img/order/9.jpg',
+        name:'Sticker',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assign',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 2,
+        img: 'img/order/5.jpg',
+        name:'Embroidery',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assign',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 3,
+        img: 'img/order/3.jpg',
+        name:'Washing',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assign',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 4,
+        img: 'img/order/4.jpg',
+        name:'Aman Solanki',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assign',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 5,
+        img: 'img/order/5.jpg',
+        name:'Aman Solanki',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assign',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 6,
+        img: 'img/order/6.jpg',
+        name:'Aman Solanki',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assign',
+        btn: ' btn-outline-success '
+      },
+    ],
 
   },
   getters: {
@@ -666,8 +762,11 @@ export default createStore({
     getThreading(state) {
       return state.threading
     },
-    getUsers(state){
+    getUsers(state) {
       return state.users
+    },
+    getManager(state) {
+      return state.manager
     }
 
   },

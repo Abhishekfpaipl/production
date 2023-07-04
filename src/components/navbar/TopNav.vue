@@ -38,7 +38,7 @@
                             <li class="list-group-item border-top-0">Profile / Account</li>
                         </router-link>
 
-                        <router-link to="" class="text-decoration-none text-dark">
+                        <router-link to="/production-manager/order" class="text-decoration-none text-dark">
                             <li class="list-group-item border-top-0">Production Manager</li>
                         </router-link>
 
@@ -64,6 +64,10 @@
 
                         <router-link to="" class="text-decoration-none text-dark">
                             <li class="list-group-item border-top-0">Fabrication</li>
+                        </router-link>
+
+                        <router-link to="" class="text-decoration-none text-dark">
+                            <li class="list-group-item border-top-0">Fabricator</li>
                         </router-link>
 
                         <router-link to="/users" class="text-decoration-none text-dark">

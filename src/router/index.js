@@ -204,7 +204,7 @@ const routes = [
         component:() => import('@/components/finishing/OrderPage.vue')
       },
       {
-        path:'/finishing/finishing',
+        path:'finishing',
         name:'Finishing-Finishing',
         children:[
           {
@@ -221,6 +221,60 @@ const routes = [
             path:'button',
             name:'Finishing-Finishing-Button',
             component:() => import('@/components/finishing/ButtonPage.vue') 
+          },
+        ]
+      },
+    ]
+  },
+
+  {
+    path:'/production-manager',
+    children:[
+      {
+        path:'order',
+        name:'Production-Manager-Order',
+        component:() => import('@/components/production manager/OrderPage.vue')
+      },
+      {
+        path:'allotment',
+        name:'Production-Manager-Allotment',
+        component:() => import('@/components/production manager/AllotmentPage.vue')
+      },
+      {
+        path:'completed',
+        name:'Production-Manager-Completed',
+        component:() => import('@/components/production manager/CompletedPage.vue')
+        
+      },
+      {
+        path:'collection',
+        name:'Production-Manager-Collection',
+        children:[
+          {
+            path:'production',
+            name:'Production-Manager-Collection-Production',
+            component:() => import('@/components/production manager/ProductionPage.vue')
+          },
+          {
+            path:'fabrication',
+            name:'Production-Manager-Collection-Fabrication',
+            component:() => import('@/components/production manager/FabricationPage.vue')
+          },
+        ]
+      },
+      {
+        path:'processing',
+        name:'Production-Manager-Processing',
+        children:[
+          {
+            path:'production',
+            name:'Production-Manager-Processing-Production',
+            component:() => import('@/components/production manager/ProductionProcess.vue')
+          },
+          {
+            path:'fabrication',
+            name:'Production-Manager-Processing-Fabrication',
+            component:() => import('@/components/production manager/FabricationProcess.vue')
           },
         ]
       },
