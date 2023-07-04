@@ -20,12 +20,16 @@
 
         </div>
     </div>
+    
 </template>
 
 <script>
 import ProductionLinks from './ProductionLinks.vue';
+ 
+
 export default {
     name: "InwardPage",
+    components: { ProductionLinks },
     data() {
         return {
             publicPath: process.env.BASE_URL
@@ -36,7 +40,7 @@ export default {
             return this.$store.getters.getProductionOrder;
         }
     },
-    components: { ProductionLinks }
+   
 }
 </script>
 

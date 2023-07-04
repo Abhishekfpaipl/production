@@ -24,6 +24,7 @@ export default createStore({
         panna: '63 inc | 1.6002 Mtr',
         fc: '230 Grm',
         stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
+         
       },
       {
         id: 2,
@@ -40,7 +41,8 @@ export default createStore({
         size: '3',
         status: 'Fabricator has Accepted the order',
         date: '15/05/23',
-        time: '06:30 pm'
+        time: '06:30 pm',
+         
       },
       {
         id: 3,
@@ -57,7 +59,8 @@ export default createStore({
         size: '1',
         status: 'Monaal Creation Accepted Order',
         date: '15/05/23',
-        time: '06:30 pm'
+        time: '06:30 pm',
+         
       },
       {
         id: 4,
@@ -74,7 +77,8 @@ export default createStore({
         size: '8',
         status: 'Fabric is Available at Monaal',
         date: '15/05/23',
-        time: '06:30 pm'
+        time: '06:30 pm',
+        
       },
       {
         id: 5,
@@ -91,7 +95,8 @@ export default createStore({
         size: '6',
         status: 'Fabric Arranged For Delivery',
         date: '15/05/23',
-        time: '06:30 pm'
+        time: '06:30 pm',
+         
       },
       {
         id: 6,
@@ -108,7 +113,8 @@ export default createStore({
         size: '2',
         status: 'Fabric Received',
         date: '15/05/23',
-        time: '06:30 pm'
+        time: '06:30 pm',
+         
       },
     ],
     activeReadyOrder: {},
@@ -234,7 +240,10 @@ export default createStore({
         style: '23188',
         qty: '1000',
         costing: '',
-        status: 'Accept'
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn:' btn-outline-success '
       },
       {
         id: 2,
@@ -242,7 +251,10 @@ export default createStore({
         style: '23188',
         qty: '1000',
         costing: '',
-        status: 'Accept'
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'In-Production',
+        btn:' btn-outline-info '
       },
       {
         id: 3,
@@ -250,7 +262,10 @@ export default createStore({
         style: '23188',
         qty: '1000',
         costing: '',
-        status: 'Accept'
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'In-Fabrication',
+        btn:' btn-outline-warning '
       },
       {
         id: 4,
@@ -258,7 +273,10 @@ export default createStore({
         style: '23188',
         qty: '1000',
         costing: '',
-        status: 'Accept'
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn:' btn-outline-success '
       },
       {
         id: 5,
@@ -266,7 +284,10 @@ export default createStore({
         style: '23188',
         qty: '1000',
         costing: '',
-        status: 'Accept'
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn:' btn-outline-success '
       },
       {
         id: 6,
@@ -274,7 +295,10 @@ export default createStore({
         style: '23188',
         qty: '1000',
         costing: '',
-        status: 'Accept'
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn:' btn-outline-success '
       },
     ],
     stiching: [
