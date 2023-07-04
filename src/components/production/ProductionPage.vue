@@ -7,6 +7,7 @@
                 <option value="1">Department 1</option>
                 <option value="2">Department 2</option>
                 <option value="3">Department 3</option>
+                <option value="3">Department 4</option>
             </select>
             <i class="bi bi-funnel mx-2 fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter"
                 aria-controls="filter"></i>
@@ -286,13 +287,13 @@
                     </div>
                     <div class="modal-body">
                         <div class="d-flex justify-content-center">
-                            <img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                            class="rounded" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                            <img src="http://dillisix.com/storage/83/IMG20230404151417.jpg" class="rounded"
+                                style="width: 100px; height: 100px; object-fit: cover;" alt="">
                         </div>
                         <p class="text-center fw-bold mt-3">Worker 1</p>
 
                     </div>
-                    
+
                 </div>
             </div>
         </div>
