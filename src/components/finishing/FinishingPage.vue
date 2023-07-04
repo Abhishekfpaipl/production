@@ -1,8 +1,7 @@
 <template>
-
-
     <div style="padding-bottom: 80px;">
-        <ProductionLinks active="Order"></ProductionLinks>
+        <TopNav> Finishing</TopNav>
+        <FinishingSublink></FinishingSublink>
         <div class="d-flex container py-3 border-bottom">
             <select class="form-select" aria-label="Default select example">
                 <option selected>All Departments</option>
@@ -425,14 +424,16 @@
                 </div>
             </div>
         </div>
-         
+        <FinishingBottomNav></FinishingBottomNav>
     </div>
 </template>
 
 <script>
- import ProductionLinks from './ProductionLinks.vue';
+import FinishingBottomNav from '../navbar/FinishingBottomNav.vue';
+import FinishingSublink from './FinishingSublink.vue';
+import TopNav from '../navbar/TopNav.vue';
 export default {
-    components: { ProductionLinks }
+    components: { FinishingBottomNav, TopNav, FinishingSublink }
 }
 </script>
 

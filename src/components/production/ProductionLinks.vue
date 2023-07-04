@@ -6,22 +6,27 @@
         <RouterLink class="nav-link ws-nowarp" :to="{ name: 'Production-Order' }"
             :class="currentRouteName('Production-Order') ? 'active' : ''">Order
         </RouterLink>
-        <router-link class="nav-link ws-nowarp" :to="{ name: 'Production-Processing' }"
-            :class="currentRouteName('Production-Processing') ? 'active' : ''">Processing</router-link>
+        <router-link class="nav-link ws-nowarp" :to="{ name: 'Production-Inhand' }"
+            :class="currentRouteName('Production-Inhand') ? 'active' : ''">Allotment</router-link>
+        <router-link class="nav-link ws-nowarp" :to="{ name: 'Production-Inproduction' }"
+            :class="currentRouteName('Production-Inproduction') ? 'active' : ''">In-Production</router-link>
 
-        <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Job-Threading' }"
-            :class="currentRouteName('Production-Job') ? 'active' : ''">Completed </router-link>
+        <router-link class="nav-link ws-nowarp " :to="{ name: 'production-production' }"
+            :class="currentRouteName('production-production') ? 'active' : ''">Worker </router-link>
+
+        <router-link class="nav-link ws-nowarp " :to="{ name: 'production-catalog' }"
+            :class="currentRouteName('production-catalog') ? 'active' : ''">Catalog </router-link>
         </div>
-        <ProductionBottomnav></ProductionBottomnav>
+         
 </template>
 
 <script>
 import TopNav from '../navbar/TopNav.vue';
-import ProductionBottomnav from '../navbar/ProductionBottomnav.vue';
+ 
 
 export default {
     name: "ProductionLinks",
-    components: { TopNav, ProductionBottomnav },
+    components: { TopNav,  },
     data() {
         return {
             // links:[

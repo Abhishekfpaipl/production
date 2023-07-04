@@ -2,7 +2,7 @@
     <div class="d-flex justify-content-evenly align-items-center bg-light w-100"
         style="position:fixed;bottom: 0;height:65px;box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;">
 
-        <router-link to="/production/order" :class="{ 'text-danger': currentRoute === 'order' }" class="text-decoration-none">
+        <router-link to="/finishing/order" :class="{ 'text-danger': currentRoute === 'order' }" class="text-decoration-none">
             <div class="d-flex flex-column align-items-center">
                 <i class="bi bi-shop-window fs-3"></i>
                 <p class="m-0" style="font-size:12px ;">Home</p>
@@ -10,7 +10,7 @@
         </router-link>
 
 
-        <router-link to="/production/inhand" :class="{ 'text-danger': currentRoute === 'production' }"
+        <router-link to="/finishing/inhand" :class="{ 'text-danger': currentRoute === 'inhand' }"
             class="text-decoration-none "> 
             <div class="d-flex flex-column align-items-center">
                 <i class="bi bi-building fs-3"></i>
