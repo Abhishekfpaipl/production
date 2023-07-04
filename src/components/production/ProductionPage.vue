@@ -8,6 +8,7 @@
                 <option value="2">Department 2</option>
                 <option value="3">Department 3</option>
                 <option value="3">Department 4</option>
+                <option value="3">Department 5</option>
             </select>
             <i class="bi bi-funnel mx-2 fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#filter"
                 aria-controls="filter"></i>
