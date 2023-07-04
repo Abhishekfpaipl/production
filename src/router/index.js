@@ -120,6 +120,24 @@ const routes = [
          
       },
       {
+        path:'catalog',
+        name:'production-catalog',
+        component:() => import('@/components/production/CatalogPage.vue')
+         
+      },
+      {
+        path:'inhand',
+        name:'Production-Inhand',
+        component:() => import('@/components/production/InHand.vue')
+         
+      },
+      {
+        path:'inproduction',
+        name:'Production-Inproduction',
+        component:() => import('@/components/production/InProduction.vue')
+         
+      },
+      {
         path:'stiching',
         name:'Production-Stiching',
         children:[
@@ -204,26 +222,36 @@ const routes = [
         component:() => import('@/components/finishing/OrderPage.vue')
       },
       {
-        path:'finishing',
+        path:'/finishing/finishing',
         name:'Finishing-Finishing',
-        children:[
-          {
-            path:'threading',
-            name:'Finishing-Finishing-Threading',
-            component:() => import('@/components/finishing/ThreadingPage.vue')
-          },
-          {
-            path:'dori',
-            name:'Finishing-Finishing-Dori',
-            component:() => import('@/components/finishing/DoriPage.vue') 
-          },
-          {
-            path:'button',
-            name:'Finishing-Finishing-Button',
-            component:() => import('@/components/finishing/ButtonPage.vue') 
-          },
-        ]
+        component:() => import('@/components/finishing/FinishingPage.vue')
       },
+      {
+        path:'inhand',
+        name:'Finishing-Inhand',
+        component:() => import('@/components/finishing/InHand.vue')
+      },
+      // {
+      //   path:'/finishing/finishing',
+      //   name:'Finishing-Finishing',
+      //   children:[
+      //     {
+      //       path:'threading',
+      //       name:'Finishing-Finishing-Threading',
+      //       component:() => import('@/components/finishing/ThreadingPage.vue')
+      //     },
+      //     {
+      //       path:'dori',
+      //       name:'Finishing-Finishing-Dori',
+      //       component:() => import('@/components/finishing/DoriPage.vue') 
+      //     },
+      //     {
+      //       path:'button',
+      //       name:'Finishing-Finishing-Button',
+      //       component:() => import('@/components/finishing/ButtonPage.vue') 
+      //     },
+      //   ]
+      // },
     ]
   },
 
