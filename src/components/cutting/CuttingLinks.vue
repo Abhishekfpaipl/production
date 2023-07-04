@@ -7,7 +7,7 @@
         <router-link class="nav-link" to="order" :class="active === 'Order' ? 'active' : ''">Order
         </router-link>
         <router-link class="nav-link " to="cutting" :class="active === 'Cutting' ? 'active' : ''" >Cutting</router-link>
-        <router-link class="nav-link " to="production" :class="active === 'Production' ? 'active' : ''" >Production</router-link>
+        <router-link class="nav-link " to="production" :class="active === 'Production' ? 'active' : ''" >Completed</router-link>
 
     </div>
 </template>

@@ -10,7 +10,7 @@
                     <p class="m-0">{{ cutting.stock }} mtr</p>
                 </div>
             </div>
-            <div v-if="cutting.status === 'Accept'" class="text-success rounded">
+            <!-- <div v-if="cutting.status === 'Accept'" class="text-success rounded">
                 <button  class="btn btn-outline-success">
                 {{ cutting.status }}
                 </button> 
@@ -31,7 +31,7 @@
                 <button  class="btn btn-outline-success">
                 {{ cutting.status }}
                 </button> 
-            </div>
+            </div> -->
 
 
         </div>

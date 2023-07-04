@@ -1,9 +1,9 @@
 <template>
+    <div class="p-2 d-flex justify-content-between border-bottom">
+        <i class="bi bi-chevron-left fs-3" @click="goback()"></i>
+        <h2>Sign Up</h2>
+    </div>
     <div class="container mt-4">
-        <div class="d-flex justify-content-between">
-            <i class="bi bi-chevron-left fs-3" @click="goback()"></i>
-            <h1>Sign Up</h1>
-        </div>
         <form @submit.prevent="submitForm">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -35,10 +35,9 @@ export default {
     },
     methods: {
         submitForm() {
-            // Handle form submission logic here
             console.log('Form submitted:', this.formData);
         },
-        goback(){
+        goback() {
             window.history.back();
         }
     }

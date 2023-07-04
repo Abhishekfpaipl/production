@@ -8,20 +8,19 @@
         </router-link>
 
         <router-link class="nav-link ws-nowarp" :to="{ name: 'Finishing-Finishing-Threading' }"
-            :class="currentRouteName('Finishing-Finishing') ? 'active' : ''">Stiching</router-link>
+            :class="currentRouteName('Finishing-Finishing') ? 'active' : ''">Finishing</router-link>
 
-        <!--    <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Job-Threading' }"
-            :class="currentRouteName ('Production-Job-Threading') ? 'active' : ''">Job
-            Work</router-link>
+          <router-link class="nav-link ws-nowarp " to=""
+            :class="currentRouteName ('Finishing-Job') ? 'active' : ''">Checking</router-link>
 
-         <router-link class="nav-link ws-nowarp " :to="{name:'Production-Material-One'}"
-            :class="currentRouteName('Production-Material-One') ? 'active' : ''">Material</router-link> -->
+          <router-link class="nav-link ws-nowarp " to=""
+            :class="currentRouteName('Production-Material-One') ? 'active' : ''">Pressing</router-link> 
 
-        <!--     <router-link class="nav-link ws-nowarp " to="overheads"
-            :class="active === 'Overheads' ? 'active' : ''">Overheads</router-link>
+         <router-link class="nav-link ws-nowarp " to="overheads"
+            :class="active === 'Overheads' ? 'active' : ''">Packing</router-link>
 
         <router-link class="nav-link ws-nowarp " to="finishing"
-            :class="active === 'Finishing' ? 'active' : ''">Finishing</router-link> -->
+            :class="active === 'Finishing' ? 'active' : ''">Ready</router-link> 
 
     </div>
 </template>

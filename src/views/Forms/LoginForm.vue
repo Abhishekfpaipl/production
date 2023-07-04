@@ -29,8 +29,7 @@ export default {
         };
     },
     methods: {
-        submitForm() {
-            // Handle form submission logic here
+        submitForm() { 
             console.log('Form submitted:', this.formData);
         },
         goback(){

@@ -114,6 +114,7 @@ export default createStore({
         name: 'Cheese Fabric',
         stock: '10000',
         price: '100',
+        status: 'Accept'
       },
       {
         id: 2,
@@ -121,6 +122,7 @@ export default createStore({
         name: 'Crepe Fabric',
         stock: '10000',
         price: '100',
+        status: 'Accept'
       },
       {
         id: 3,
@@ -128,6 +130,7 @@ export default createStore({
         name: 'Georgette Fabric',
         stock: '10000',
         price: '150',
+        status: 'Accept'
       },
       {
         id: 4,
@@ -135,6 +138,7 @@ export default createStore({
         name: 'Cotton Duck',
         stock: '10000',
         price: '150',
+        status: 'Accept'
       },
       {
         id: 5,
@@ -142,6 +146,7 @@ export default createStore({
         name: 'Georgette Fabric',
         stock: '10000',
         price: '150',
+        status: 'Accept'
       },
       {
         id: 6,
@@ -149,6 +154,7 @@ export default createStore({
         name: 'Cotton Duck',
         stock: '10000',
         price: '150',
+        status: 'Accept'
       },
     ],
     cutting: [
@@ -172,7 +178,7 @@ export default createStore({
           { id: 4, name: 'F' },
           { id: 5, name: 'XL' },
         ],
-        // status: 'Accept'
+        status: 'Accept'
       },
       {
         id: 2,
@@ -180,7 +186,7 @@ export default createStore({
         name: 'Crepe Fabric',
         stock: '10000',
         price: '100',
-        // status: 'Running'
+        status: 'Accept'
       },
       {
         id: 3,
@@ -188,7 +194,7 @@ export default createStore({
         name: 'Georgette Fabric',
         stock: '10000',
         price: '150',
-        // status: 'Running'
+        status: 'Accept'
       },
       {
         id: 4,
@@ -196,7 +202,7 @@ export default createStore({
         name: 'Cotton Duck',
         stock: '10000',
         price: '150',
-        // status: 'Hold'
+        status: 'Accept'
       },
       {
         id: 5,
@@ -204,7 +210,7 @@ export default createStore({
         name: 'Georgette Fabric',
         stock: '10000',
         price: '150',
-        // status: 'Hold'
+        status: 'Accept'
       },
       {
         id: 6,
@@ -212,7 +218,7 @@ export default createStore({
         name: 'Cotton Duck',
         stock: '10000',
         price: '150',
-        // status: 'Finished'
+        status: 'Accept'
       },
     ],
     activeCuttingOrder: {},
@@ -222,42 +228,48 @@ export default createStore({
         img: 'img/order/1.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 2,
         img: 'img/order/2.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 3,
         img: 'img/order/3.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 4,
         img: 'img/order/4.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 5,
         img: 'img/order/5.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 6,
         img: 'img/order/6.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
     ],
     stiching: [
@@ -416,48 +428,54 @@ export default createStore({
         img: 'img/order/1.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 2,
         img: 'img/order/2.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 3,
         img: 'img/order/3.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 4,
         img: 'img/order/4.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 5,
         img: 'img/order/5.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
       {
         id: 6,
         img: 'img/order/6.jpg',
         style: '23188',
         qty: '1000',
-        costing: ''
+        costing: '',
+        status: 'Accept'
       },
     ],
     threading: [
       {
         id: 1,
-        img: 'img/order/12.jpg',
+        img: 'img/order/12.png',
         name: 'Aman Solanki',
         style: '23188',
         qty: '100',
