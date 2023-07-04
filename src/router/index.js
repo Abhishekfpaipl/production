@@ -17,6 +17,16 @@ const routes = [
     name: "LoginForm",
     component:() => import('@/views/Forms/LoginForm.vue'),
   },
+  {
+    path: "/users",
+    name: "User",
+    component:() => import('@/components/user/MembersPage.vue'),
+  },
+  {
+    path: "/create-member",
+    name: "CreateMember",
+    component:() => import('@/components/user/CreateMember.vue'),
+  },
 
   {
     path:'/order',

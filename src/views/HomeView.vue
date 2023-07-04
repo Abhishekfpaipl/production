@@ -1,13 +1,15 @@
 <template>
+
   <div class="home">
-    Hello
+    <TopNav>Dashboard</TopNav>
   </div>
 </template>
 
 <script>
 
+import TopNav from '@/components/navbar/TopNav.vue';
 export default {
-  name: "HomeView",
-  
+    name: "HomeView",
+    components: { TopNav }
 };
 </script>

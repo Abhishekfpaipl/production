@@ -551,6 +551,85 @@ export default createStore({
         rate: '30'
       },
     ],
+    users: [
+      {
+          id: 1,
+          name: 'Kedar',
+          role: 'Creator',
+          status: 'Access Granted',
+          imgu: "img/members/jyoti.jpg"
+      },
+      {
+          id: 2,
+          name: 'Amit Sardar',
+          role: 'Admin',
+          status: 'Access Granted',
+          imgu: "img/members/Kedar.jpg"
+      },
+      {
+          id: 3,
+          name: 'Dheeraj Sardar',
+          role: 'Admin',
+          status: 'Access Granted',
+          imgu: "img/members/Modern.jpg"
+      },
+      {
+          id: 4,
+          name: 'jyoti Garments',
+          role: 'Assignee',
+          status: 'Access Granted',
+          imgu: "img/members/Narender.jpg"
+      },
+      {
+          id: 4,
+          name: 'Narender',
+          role: 'Manager',
+          status: 'Access Granted',
+          imgu: "img/members/jyoti.jpg"
+      },
+      {
+          id: 4,
+          name: 'Modern Collection',
+          role: 'Assignee',
+          status: 'Access Granted',
+          imgu: "img/members/Kedar.jpg"
+      },
+      {
+          id: 5,
+          name: 'Adnan Siddiqui',
+          role: 'Assignee',
+          status: 'Access Granted',
+          imgu: "img/members/jyoti.jpg"
+      },
+      {
+          id: 6,
+          name: 'Hari Shankar',
+          role: 'Assignee',
+          status: 'Access Granted',
+          imgu: "img/members/jyoti.jpg"
+      },
+      {
+          id: 7,
+          name: 'Hari Shankar',
+          role: 'Assignee',
+          status: 'Access Granted',
+          imgu: "img/members/jyoti.jpg"
+      },
+      {
+          id: 8,
+          name: 'Hari Shankar',
+          role: 'Assignee',
+          status: 'Access Granted',
+          imgu: "img/members/jyoti.jpg"
+      },
+      {
+          id: 9,
+          name: 'Hari Shankar',
+          role: 'Assignee',
+          status: 'Access Granted',
+          imgu: "img/members/jyoti.jpg"
+      },
+  ],
 
   },
   getters: {
@@ -586,6 +665,9 @@ export default createStore({
     },
     getThreading(state) {
       return state.threading
+    },
+    getUsers(state){
+      return state.users
     }
 
   },

@@ -65,6 +65,10 @@
                         <router-link to="" class="text-decoration-none text-dark">
                             <li class="list-group-item border-top-0">Fabrication</li>
                         </router-link>
+
+                        <router-link to="/users" class="text-decoration-none text-dark">
+                            <li class="list-group-item border-top-0">Users</li>
+                        </router-link>
                        
                     </ul>
                 </div>
