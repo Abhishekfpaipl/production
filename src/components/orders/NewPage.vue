@@ -11,17 +11,70 @@
                 </div>
             </div>
         </div>
+        
         <div v-if="Object.keys(activeOrder).length !== 0" class="">
             <div class="offcanvas offcanvas-end show " data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-                aria-labelledby="staticBackdropLabel">
+                aria-labelledby="offcanvasWithBackdropLabel">
                 <!-- ---------------------- -->
-                <div class="offcanvas-header border d-flex justify-content-between align-items-center">
-                    <b>#123765544</b>
-                    <button type="button" class="btn" @click="hideReadyOrder()"><i class="bi bi-x fs-4"></i></button>
-                </div>
-                <div class="offcanvas-body pt-0">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item mt-3">
+                <div class="offcanvas-body pt-0 px-0">
+                    <div class="container p-2">
+                        <div class="d-flex justify-content-between">
+                            <img :src="`${publicPath}${activeOrder.img}`" class="rounded-circle"
+                                style="height:60px;width:60px; object-fit: fill;">
+                            <div class="d-flex flex-column ms-2" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample">
+                                <b class="m-0">#{{ activeOrder.style }} | <span>Bal : {{ activeOrder.ready }}
+                                    </span>
+                                </b>
+                                <p class="m-0 text-success">{{ activeOrder.date }} | <span>{{ activeOrder.time }}
+                                    </span>
+                                </p>
+                            </div>
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                            <button type="button" class="btn" @click="hideReadyOrder()">
+                                <i class="bi bi-x fs-4"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <img :src="`${publicPath}${activeOrder.img}`" style=" width: 100%;  object-fit: fill;">
+                        <div class="box mt-2">
+                            <table class="table table-striped table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Name</th>
+                                        <td class="text-muted">{{ activeOrder.name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Sale Price</th>
+                                        <td class="text-muted">{{ activeOrder.sp }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Panna</th>
+                                        <td class="text-muted">{{ activeOrder.panna }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Fc / Piece</th>
+                                        <td class="text-muted">{{ activeOrder.fc }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Search Tags</th>
+                                        <td class="text-muted">{{ activeOrder.stag }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- <input type="file" capture="environment" accept="image/*"> -->
+
+                    <div class="accordion container" id="accordionPanelsStayOpenExample">
+                        <!-- <div class="accordion-item mt-3">
                             <div class="accordion-header" id="panelsStayOpen-headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
@@ -74,7 +127,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <h4 class="text-center mt-3">New Order</h4>
                         <div class="accordion-item mt-3">
                             <h2 class="accordion-header" id="headingTwo">
@@ -86,44 +139,38 @@
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
-                                <div class="body border border-3 border-success">
-                                    <p class="text-success border-bottom p-2 m-0" style="font-size: 14px;"><i
+                                <!-- <div v-for="(progress, index) in progresses" :key="index" class="body border border-2 border-success"> -->
+                                <div class="body border border-2 border-success">
+                                    <p class="border-1 border-bottom p-2 m-0" style="font-size: 14px;"><i
                                             class="bi bi-check2-circle"></i>
                                         New Order Posted</p>
-                                    <div class="d-flex justify-content-between p-2 border-bottom py-2">
+                                    <div class="d-flex justify-content-between p-2 border-1 border-bottom py-2">
                                         <button class="btn btn-warning text-center w-100">Accept Order</button>
                                     </div>
-
-                                    <p class="text-danger border-bottom p-2 m-0" style="font-size: 14px;"><i
+                                    <p class="text-danger border-1 border-bottom p-2 m-0" style="font-size: 14px;"><i
                                             class="bi bi-dash-circle"></i>
                                         Manager Has Accepted</p>
-                                    <p class="text-danger border-bottom p-2 m-0" style="font-size: 14px;"><i
+                                    <p class="text-danger border-1 border-bottom p-2 m-0" style="font-size: 14px;"><i
                                             class="bi bi-dash-circle"></i>
-                                        Material is Available At
-                                        Godown</p>
+                                        Material is Available At Godown</p>
 
-                                    <p class="text-danger border-bottom p-2 m-0" style="font-size: 14px;"><i
+                                    <p class="text-danger border-1 border-bottom p-2 m-0" style="font-size: 14px;"><i
                                             class="bi bi-dash-circle"></i>
-                                        Material is Arrange For
-                                        Delivery</p>
+                                        Material is Arrange For Delivery</p>
 
-                                    <p class="text-danger border-bottom p-2 m-0" style="font-size: 14px;"><i
+                                    <p class="text-danger border-1 border-bottom p-2 m-0" style="font-size: 14px;"><i
                                             class="bi bi-dash-circle"></i>
                                         Material Delivery To Assignee</p>
 
-                                    <p class="text-danger border-bottom p-2 m-0" style="font-size: 14px;"><i
+                                    <p class="text-danger border-1 border-bottom p-2 m-0" style="font-size: 14px;"><i
                                             class="bi bi-dash-circle"></i>
                                         Production Has Started</p>
-                                    <p class="text-danger border-bottom p-2 m-0" style="font-size: 14px;"><i
+                                    <p class="text-danger border-1 border-bottom p-2 m-0" style="font-size: 14px;"><i
                                             class="bi bi-dash-circle"></i>
-                                        Order is Available For
-                                        Dispatch</p>
-
-                                    <p class="text-danger border-bottom p-2 m-0" style="font-size: 14px;"><i
+                                        Order is Available For Dispatch</p>
+                                    <p class="text-danger border-1 border-bottom p-2 m-0" style="font-size: 14px;"><i
                                             class="bi bi-dash-circle"></i>
                                         Order Completely Dispatched</p>
-
-
                                 </div>
                             </div>
                         </div>
@@ -137,13 +184,13 @@
                             </h2>
                             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingThree">
-                                <div class="body border border-3 border-warning p-1 ">
+                                <div class="body border border-2 border-warning p-1 ">
                                     <div class="border mt-4">
                                         <div class="table-responsive " id="scroll" style="font-size: 12px !important;">
                                             <table class="table m-0">
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col" class="text-center"> Qty</th>
+                                                        <th scope="col" class="text-center">Qty</th>
                                                         <th scope="col">
                                                             <div class="d-flex flex-column">
                                                                 <p class="m-0 text-center">XS</p>
@@ -174,7 +221,7 @@
                                                                 <p class="m-0 text-center">Free</p>
                                                             </div>
                                                         </th>
-                                                        <th colspan="2" class="text-center">All same</th>
+                                                        <!-- <th colspan="2" class="text-center">All same</th> -->
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -214,14 +261,14 @@
                                                                 style="width: 50px;font-size: 15px !important;"
                                                                 placeholder="60">
                                                         </td>
-                                                        <td class="text-center">
+                                                        <!-- <td class="text-center">
                                                             <p class="m-0" style="width: 50px;font-size: 15px !important;">
                                                                 Copy</p>
                                                         </td>
                                                         <td class="text-center">
                                                             <p class="m-0" style="width: 50px;font-size: 15px !important;">
                                                                 Pase</p>
-                                                        </td>
+                                                        </td> -->
                                                     </tr>
                                                     <tr>
                                                         <th scope="row" style="font-size:14px">
@@ -253,20 +300,21 @@
                                                             <input type="number" class="form-control" placeholder="60"
                                                                 style="width: 50px;font-size: 15px !important;">
                                                         </td>
-                                                        <td class="text-center">
+                                                        <!-- <td class="text-center">
                                                             <p class="m-0" style="width: 50px;font-size: 15px !important;">
                                                                 Copy</p>
                                                         </td>
                                                         <td class="text-center">
                                                             <p class="m-0" style="width: 50px;font-size: 15px !important;">
                                                                 Paste</p>
-                                                        </td>
+                                                        </td> -->
                                                     </tr>
                                                 </tbody>
                                             </table>
 
                                         </div>
-                                        <div class="card rounded-0 text-center p-3 m-2">Submit
+                                        <div class="d-flex justify-content-center">
+                                            <button class="btn btn-secondary m-2">Submit</button>
                                         </div>
                                     </div>
                                 </div>
@@ -284,8 +332,47 @@
 import OrderLinks from './OrderLinks.vue';
 export default {
     name: "NewPage",
+    components: { OrderLinks },
     data() {
         return {
+            // progresses: [
+            //     {
+            //         name: 'New Order Posted',
+            //         color: 'text-success'
+            //     },
+            //     {
+            //         name: 'Accept Order',
+            //         color: 'text-danger'
+            //     },
+            //     {
+            //         name: 'Manager Has Accepted',
+            //         color: 'text-danger'
+            //     },
+            //     {
+            //         name: 'Material is Available At Godown',
+            //         color: 'text-danger'
+            //     },
+            //     {
+            //         name: 'Material is Arrange For Delivery',
+            //         color: 'text-danger'
+            //     },
+            //     {
+            //         name: 'Material Delivery To Assignee',
+            //         color: 'text-danger'
+            //     },
+            //     {
+            //         name: 'Production Has Started',
+            //         color: 'text-danger'
+            //     },
+            //     {
+            //         name: 'Order is Available For Dispatch',
+            //         color: 'text-danger'
+            //     },
+            //     {
+            //         name: 'Order Completely Dispatched',
+            //         color: 'text-danger'
+            //     },
+            // ],
             publicPath: process.env.BASE_URL
         }
     },
@@ -297,7 +384,6 @@ export default {
             return this.$store.getters.getActiveReadyOrder;
         }
     },
-    components: { OrderLinks },
     methods: {
         showReadyOrder(order) {
             return this.$store.dispatch('selectReadyOrder', order);
@@ -317,4 +403,7 @@ export default {
     border-color: none;
     box-shadow: none;
 }
-</style>
+
+.btn {
+    --bs-btn-border-width: none;
+}</style>

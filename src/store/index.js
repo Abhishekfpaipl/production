@@ -18,7 +18,12 @@ export default createStore({
         size: '3',
         status: 'New Order Posted',
         date: '15/05/23',
-        time: '06:30 pm'
+        time: '06:30 pm',
+        name: 'T-Shirt',
+        sp: '200',
+        panna: '63 inc | 1.6002 Mtr',
+        fc: '230 Grm',
+        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
       },
       {
         id: 2,
@@ -457,7 +462,7 @@ export default createStore({
     threading: [
       {
         id: 1,
-        img: 'img/order/12.jpg',
+        img: 'img/order/12.png',
         name: 'Aman Solanki',
         style: '23188',
         qty: '100',
