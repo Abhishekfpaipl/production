@@ -13,7 +13,9 @@
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" v-model="formData.password" required>
             </div>
-            <button type="submit" class="btn btn-primary">Log In</button>
+            <div class="mt-3 d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary">Log In</button>
+            </div>
         </form>
     </div>
 </template>
@@ -32,7 +34,7 @@ export default {
         submitForm() { 
             console.log('Form submitted:', this.formData);
         },
-        goback(){
+        goback() {
             window.history.back();
         }
     }

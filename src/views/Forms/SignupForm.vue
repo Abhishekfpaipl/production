@@ -17,7 +17,9 @@
                 <label for="password">Password</label>
                 <input type="password" class="form-control" id="password" v-model="formData.password" required>
             </div>
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <div class="d-flex mt-3 justify-content-center">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
         </form>
     </div>
 </template>

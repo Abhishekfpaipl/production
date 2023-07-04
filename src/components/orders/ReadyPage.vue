@@ -12,7 +12,7 @@
             </div>
         </div>
         <div v-if="Object.keys(activeOrder).length !== 0">
-            <div class="offcanvas offcanvas-end show" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+            <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                 aria-labelledby="staticBackdropLabel">
                 <div class="offcanvas-header border d-flex">
                     <img :src="`${publicPath}${activeOrder.img}`" class="rounded-circle"
