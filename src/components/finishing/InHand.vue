@@ -1,8 +1,7 @@
 <template>
-
-
-    <div style="padding-bottom: 80px;">
-        <ProductionLinks active="Order"></ProductionLinks>
+    <div>
+        <TopNav> Finishing</TopNav>
+        <FinishingSublink></FinishingSublink>
         <div class="d-flex container py-3 border-bottom">
             <select class="form-select" aria-label="Default select example">
                 <option selected>All Departments</option>
@@ -24,7 +23,7 @@
             <table class="table table-striped table-hover">
                 <thead>
                     <tr style="font-size: 13px;">
-                        <th class="py-3" scope="col">Worker</th>
+                        <th class="py-3" scope="col">Catalogs</th>
                         <th class="py-3" scope="col">Allot</th>
                         <th class="py-3" scope="col">Pending</th>
                         <th class="py-3" scope="col">Due</th>
@@ -34,8 +33,8 @@
                 </thead>
                 <tbody>
                     <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                                class="rounded-circle " style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
+                        <th scope="row"><img src="http://dillisix.com/storage/345/-23853.jpg" class="rounded-circle "
+                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
                         <td>1000</td>
                         <td>3000</td>
                         <td>6000</td>
@@ -43,7 +42,7 @@
                         <td>8000</td>
                     </tr>
                     <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg" class="rounded-circle"
+                        <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg" class="rounded-circle"
                                 style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
                         <td>9000</td>
                         <td>3000</td>
@@ -52,17 +51,17 @@
                         <td>2000</td>
                     </tr>
                     <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
-                                class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
+                        <th scope="row"><img src="http://dillisix.com/storage/534/-23870.jpg" class="rounded-circle"
+                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
                         <td>1000</td>
                         <td>1000</td>
                         <td>1000</td>
                         <td>1000</td>
                         <td>1000</td>
                     </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                                class="rounded-circle " style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
+                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <th scope="row"><img src="http://dillisix.com/storage/345/-23853.jpg" class="rounded-circle "
+                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
                         <td>1000</td>
                         <td>3000</td>
                         <td>6000</td>
@@ -70,7 +69,7 @@
                         <td>8000</td>
                     </tr>
                     <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg" class="rounded-circle"
+                        <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg" class="rounded-circle"
                                 style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
                         <td>9000</td>
                         <td>3000</td>
@@ -79,224 +78,38 @@
                         <td>2000</td>
                     </tr>
                     <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
-                                class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                                class="rounded-circle " style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>3000</td>
-                        <td>8000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg" class="rounded-circle"
+                        <th scope="row"><img src="http://dillisix.com/storage/534/-23870.jpg" class="rounded-circle"
                                 style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>9000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>5000</td>
-                        <td>2000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
-                                class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
                         <td>1000</td>
                         <td>1000</td>
                         <td>1000</td>
                         <td>1000</td>
                         <td>1000</td>
                     </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                                class="rounded-circle " style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>3000</td>
-                        <td>8000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg" class="rounded-circle"
-                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>9000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>5000</td>
-                        <td>2000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
-                                class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                                class="rounded-circle " style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>3000</td>
-                        <td>8000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg" class="rounded-circle"
-                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>9000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>5000</td>
-                        <td>2000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
-                                class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                                class="rounded-circle " style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>3000</td>
-                        <td>8000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg" class="rounded-circle"
-                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>9000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>5000</td>
-                        <td>2000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
-                                class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                                class="rounded-circle " style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>3000</td>
-                        <td>8000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg" class="rounded-circle"
-                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>9000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>5000</td>
-                        <td>2000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
-                                class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                                class="rounded-circle " style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>3000</td>
-                        <td>8000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg" class="rounded-circle"
-                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>9000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>5000</td>
-                        <td>2000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
-                                class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
-                                class="rounded-circle " style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>3000</td>
-                        <td>8000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg" class="rounded-circle"
-                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>9000</td>
-                        <td>3000</td>
-                        <td>6000</td>
-                        <td>5000</td>
-                        <td>2000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
-                                class="rounded-circle" style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                        <td>1000</td>
-                    </tr>
+
                 </tbody>
             </table>
         </div>
+
+
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">
-                            <p class="fw-bold mb-0">ID:<span class="fw-normal"> 45879887</span></p>
+                            <p class="fw-bold mb-0">Style ID<span class="fw-normal"> #79887</span></p>
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body p-2">
                         <div class="d-flex  border-bottom pb-2">
-                            <img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
+                            <img src="http://dillisix.com/storage/345/-23853.jpg"
                                 style="width: 130px; height: 100px; object-fit: cover;" alt="">
                             <div class="ms-2 w-100">
                                 <p class="fw-bold mb-0">Name:<span class="fw-normal"> Deepak kumar Sharma</span></p>
-                                <p class="fw-bold mb-0">Dept.:<span class="fw-normal"> Single Needle Machine</span></p>
-                                <p class="fw-bold mb-0">Rate:<span class="fw-normal"> ₹ 50/pc</span></p>
-                                <p class="fw-bold mb-0">Phone: <span class="fw-normal"> 9845653548</span></p>
+                                <p class="fw-bold mb-0">Dept.: <span class="fw-normal"> 2</span></p>
+                                <p class="fw-bold mb-0">Rate: <span class="fw-normal"> ₹ 50 + 50</span></p>
+                                <p class="fw-bold mb-0">Exp. Time: <span class="fw-normal"> 12:20 AM, 07 July</span></p>
                             </div>
                         </div>
                         <p class="text-center mt-3 m-0 fs-5">Running Catalogs</p>
@@ -314,7 +127,7 @@
                                 </thead>
                                 <tbody>
                                     <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <th scope="row"><img src="http://dillisix.com/storage/522/-20868.jpg"
+                                        <th scope="row"><img src="http://dillisix.com/storage/54/kedar.jpg"
                                                 class="rounded-circle "
                                                 style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
                                         <td>1000</td>
@@ -324,7 +137,8 @@
                                         <td>8000</td>
                                     </tr>
                                     <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <th scope="row"><img src="http://dillisix.com/storage/522/-20868.jpg"
+                                        <th scope="row"><img
+                                                src="http://dillisix.com/storage/53/narender-profile-image.jpeg"
                                                 class="rounded-circle "
                                                 style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
                                         <td>1000</td>
@@ -334,7 +148,7 @@
                                         <td>8000</td>
                                     </tr>
                                     <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <th scope="row"><img src="http://dillisix.com/storage/522/-20868.jpg"
+                                        <th scope="row"><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
                                                 class="rounded-circle "
                                                 style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
                                         <td>1000</td>
@@ -410,6 +224,10 @@
                     <option value="5">#156875</option>
                     <option value="6">#156876</option>
                 </select>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingInput" placeholder="Catalog Quantity">
+                    <label for="floatingInput">Catalog Quantity</label>
+                </div>
                 <div class="d-flex w-100 my-3">
                     <div class="mb-2 mx-2 w-50">
                         <label for="date" class="form-label ms-1">Expected Date</label>
@@ -425,14 +243,16 @@
                 </div>
             </div>
         </div>
-         
+        <FinishingBottomNav></FinishingBottomNav>
     </div>
 </template>
 
 <script>
- import ProductionLinks from './ProductionLinks.vue';
+import FinishingSublink from './FinishingSublink.vue';
+import FinishingBottomNav from '../navbar/FinishingBottomNav.vue';
+import TopNav from '../navbar/TopNav.vue';
 export default {
-    components: { ProductionLinks }
+    components: { TopNav, FinishingBottomNav, FinishingSublink }
 }
 </script>
 
