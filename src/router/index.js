@@ -6,303 +6,160 @@ const routes = [
     name: "home",
     component: HomeView,
     children: []
-  },      
+  },
   {
     path: "/sign-up",
     name: "SignupForm",
-    component:() => import('@/views/Forms/SignupForm.vue'),
+    component: () => import('@/views/Forms/SignupForm.vue'),
   },
   {
     path: "/login",
     name: "LoginForm",
-    component:() => import('@/views/Forms/LoginForm.vue'),
+    component: () => import('@/views/Forms/LoginForm.vue'),
   },
   {
     path: "/users",
     name: "User",
-    component:() => import('@/components/user/MembersPage.vue'),
+    component: () => import('@/components/user/MembersPage.vue'),
   },
   {
     path: "/create-member",
     name: "CreateMember",
-    component:() => import('@/components/user/CreateMember.vue'),
+    component: () => import('@/components/user/CreateMember.vue'),
   },
 
   {
-    path:'/order',
-    children:[
-      {
-        path:'new',
-        name:'Order-New',
-        component:() => import('@/components/orders/NewPage.vue')
-      },
-      {
-        path:'ready',
-        name:'Order-Ready',
-        component:() => import('@/components/orders/ReadyPage.vue')
-      },
-      {
-        path:'order',
-        name:'Order-Order',
-        component:() => import('@/components/orders/OrderPage.vue')
-      },
-      {
-        path:'shipped',
-        name:'Order-Shipped',
-        component:() => import('@/components/orders/ShippedPage.vue')
-      },
-      {
-        path:'delivered',
-        name:'Order-Delivered',
-        component:() => import('@/components/orders/DeliveredPage.vue')
-      },
-    ]
-  },
-  {
-    path: '/store',
+    path: '/order',
     children: [
       {
-        path: 'inward',
-        name: 'Store-Inward',
-        component: () => import('@/components/store/InwardPage.vue'),
+        path: 'new',
+        name: 'Order-New',
+        component: () => import('@/components/orders/NewPage.vue')
       },
       {
-        path: 'store',
-        name: 'Store-Store',
-        component: () => import('@/components/store/StorePage.vue'),
+        path: 'ready',
+        name: 'Order-Ready',
+        component: () => import('@/components/orders/ReadyPage.vue')
       },
       {
-        path: 'cutting',
-        name: 'Store-Cutting',
-        component: () => import('@/components/store/CuttingPage.vue')
-      },
-    ]
-  },
-
-  {
-    path:'/cutting',
-    children:[
-      {
-        path:'order',
-        name:'Cutting-Order',
-        component:() => import('@/components/cutting/OrderPage.vue')
+        path: 'order',
+        name: 'Order-Order',
+        component: () => import('@/components/orders/OrderPage.vue')
       },
       {
-        path:'cutting',
-        name:'Cutting-Cutting',
-        component:() => import('@/components/cutting/CuttingPage.vue')
+        path: 'shipped',
+        name: 'Order-Shipped',
+        component: () => import('@/components/orders/ShippedPage.vue')
       },
       {
-        path:'production',
-        name:'Cutting-Production',
-        component:() => import('@/components/cutting/ProductionPage.vue')
+        path: 'delivered',
+        name: 'Order-Delivered',
+        component: () => import('@/components/orders/DeliveredPage.vue')
       },
     ]
   },
 
   {
-    path:'/production',
-    children:[
+    path: '/cutting',
+    name: ' Cutting',
+    component: () => import('@/components/cutting/CuttingPage.vue')
+  },
+
+  {
+    path: '/production',
+    children: [
       {
-        path:'order',
-        name:'Production-Order',
-        component:() => import('@/components/production/OrderPage.vue')
+        path: 'order',
+        name: 'Production-Order',
+        component: () => import('@/components/production/OrderPage.vue')
       },
       {
-        path:'processing',
-        name:'Production-Processing',
-        component:() => import('@/components/production/ProcessingPage.vue')
+        path: 'processing',
+        name: 'Production-Processing',
+        component: () => import('@/components/production/ProcessingPage.vue')
       },
       {
-        path:'production',
-        name:'production-production',
-        component:() => import('@/components/production/ProductionPage.vue')
-         
+        path: 'production',
+        name: 'production-production',
+        component: () => import('@/components/production/ProductionPage.vue')
+
       },
       {
-        path:'catalog',
-        name:'production-catalog',
-        component:() => import('@/components/production/CatalogPage.vue')
-         
+        path: 'catalog',
+        name: 'production-catalog',
+        component: () => import('@/components/production/CatalogPage.vue')
+
       },
       {
-        path:'inhand',
-        name:'Production-Inhand',
-        component:() => import('@/components/production/InHand.vue')
-         
+        path: 'inhand',
+        name: 'Production-Inhand',
+        component: () => import('@/components/production/InHand.vue')
+
       },
       {
-        path:'inproduction',
-        name:'Production-Inproduction',
-        component:() => import('@/components/production/InProduction.vue')
-         
+        path: 'inproduction',
+        name: 'Production-Inproduction',
+        component: () => import('@/components/production/InProduction.vue')
+
       },
-      {
-        path:'stiching',
-        name:'Production-Stiching',
-        children:[
-          {
-            path:'single',
-            name:'Production-Stiching-Single',
-            component:() => import('@/components/production/SingleNeedle.vue')
-          },
-          {
-            path:'overlock',
-            name:'Production-Stiching-Overlock',
-            component:() => import('@/components/production/OverLock.vue') 
-          },
-          {
-            path:'wastage',
-            name:'Production-Stiching-Wastage',
-            component:() => import('@/components/production/WasTage.vue') 
-          },
-        ]
-      },
-      {
-        path:'/production/job',
-        name:'Production-Job',
-        children:[
-          {
-            path:'threading',
-            name:'Production-Job-Threading',
-            component:() => import('@/components/production/ThreadingPage.vue')
-          },
-          {
-            path:'dori',
-            name:'Production-Job-Dori',
-            component:() => import('@/components/production/DoriPage.vue')
-          },
-          {
-            path:'button',
-            name:'Production-Job-Button',
-            component:() => import('@/components/production/ButtonPage.vue')
-          },
-        ]
-      },
-      {
-        path:'/production/material',
-        name:'Production-Material',
-        children:[
-          {
-            path:'one',
-            name:'Production-Material-One',
-            component:() => import('@/components/production/MaterialOne.vue')
-          },
-          {
-            path:'two',
-            name:'Production-Material-Two',
-            component:() => import('@/components/production/MaterialTwo.vue')
-          },
-          {
-            path:'three',
-            name:'Production-Material-Three',
-            component:() => import('@/components/production/MaterialThree.vue')
-          },
-        ]
-      },
-      {
-        path:'/production/overheads',
-        name:'Production-Overheads',
-        component:() => import('@/components/production/OverHead.vue')
-      },
-      {
-        path:'/production/finishing',
-        name:'Production-Finishing',
-        component:() => import('@/components/production/FinishingPage.vue')
-      },
+
     ]
   },
 
   {
-    path:'/finishing',
-    children:[
-      {
-        path:'order',
-        name:'Finishing-Order',
-        component:() => import('@/components/finishing/OrderPage.vue')
-      },
-      {
-        path:'/finishing/finishing',
-        name:'Finishing-Finishing',
-        component:() => import('@/components/finishing/FinishingPage.vue')
-      },
-      {
-        path:'inhand',
-        name:'Finishing-Inhand',
-        component:() => import('@/components/finishing/InHand.vue')
-      },
-      // {
-      //   path:'/finishing/finishing',
-      //   name:'Finishing-Finishing',
-      //   children:[
-      //     {
-      //       path:'threading',
-      //       name:'Finishing-Finishing-Threading',
-      //       component:() => import('@/components/finishing/ThreadingPage.vue')
-      //     },
-      //     {
-      //       path:'dori',
-      //       name:'Finishing-Finishing-Dori',
-      //       component:() => import('@/components/finishing/DoriPage.vue') 
-      //     },
-      //     {
-      //       path:'button',
-      //       name:'Finishing-Finishing-Button',
-      //       component:() => import('@/components/finishing/ButtonPage.vue') 
-      //     },
-      //   ]
-      // },
-    ]
+    path: '/finishing',
+    name: 'Finishing',
+    component: () => import('@/components/finishing/FinishingPage.vue')
   },
 
   {
-    path:'/production-manager',
-    children:[
+    path: '/production-manager',
+    children: [
       {
-        path:'order',
-        name:'Production-Manager-Order',
-        component:() => import('@/components/production manager/OrderPage.vue')
+        path: 'order',
+        name: 'Production-Manager-Order',
+        component: () => import('@/components/production manager/OrderPage.vue')
       },
       {
-        path:'allotment',
-        name:'Production-Manager-Allotment',
-        component:() => import('@/components/production manager/AllotmentPage.vue')
+        path: 'allotment',
+        name: 'Production-Manager-Allotment',
+        component: () => import('@/components/production manager/AllotmentPage.vue')
       },
       {
-        path:'completed',
-        name:'Production-Manager-Completed',
-        component:() => import('@/components/production manager/CompletedPage.vue')
-        
+        path: 'completed',
+        name: 'Production-Manager-Completed',
+        component: () => import('@/components/production manager/CompletedPage.vue')
+
       },
       {
-        path:'collection',
-        name:'Production-Manager-Collection',
-        children:[
+        path: 'collection',
+        name: 'Production-Manager-Collection',
+        children: [
           {
-            path:'production',
-            name:'Production-Manager-Collection-Production',
-            component:() => import('@/components/production manager/ProductionPage.vue')
+            path: 'production',
+            name: 'Production-Manager-Collection-Production',
+            component: () => import('@/components/production manager/ProductionPage.vue')
           },
           {
-            path:'fabrication',
-            name:'Production-Manager-Collection-Fabrication',
-            component:() => import('@/components/production manager/FabricationPage.vue')
+            path: 'fabrication',
+            name: 'Production-Manager-Collection-Fabrication',
+            component: () => import('@/components/production manager/FabricationPage.vue')
           },
         ]
       },
       {
-        path:'processing',
-        name:'Production-Manager-Processing',
-        children:[
+        path: 'processing',
+        name: 'Production-Manager-Processing',
+        children: [
           {
-            path:'production',
-            name:'Production-Manager-Processing-Production',
-            component:() => import('@/components/production manager/ProductionProcess.vue')
+            path: 'production',
+            name: 'Production-Manager-Processing-Production',
+            component: () => import('@/components/production manager/ProductionProcess.vue')
           },
           {
-            path:'fabrication',
-            name:'Production-Manager-Processing-Fabrication',
-            component:() => import('@/components/production manager/FabricationProcess.vue')
+            path: 'fabrication',
+            name: 'Production-Manager-Processing-Fabrication',
+            component: () => import('@/components/production manager/FabricationProcess.vue')
           },
         ]
       },

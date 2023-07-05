@@ -1,5 +1,5 @@
 <template>
-    <CuttingLinks active="Cutting"></CuttingLinks>
+     <TopNav>Cutting</TopNav>
     <div class="mt-2">
         <div v-for="(cutting, index) in cuttings" :key="index" @click="showOrder(cutting)"
             class="d-flex justify-content-between align-items-center border-bottom p-2">
@@ -169,7 +169,7 @@
 </template>
 
 <script>
-import CuttingLinks from './CuttingLinks.vue';
+ import TopNav from '../navbar/TopNav.vue';
 export default {
     name: "CuttingPage",
     data() {
@@ -188,7 +188,7 @@ export default {
             return this.$store.getters.getActiveCuttingOrder;
         }
     },
-    components: { CuttingLinks },
+    components: { TopNav },
     methods: {
         showOrder(cutting) {
             return this.$store.dispatch('selectCuttingOrder', cutting)

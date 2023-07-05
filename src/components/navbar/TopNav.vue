@@ -46,11 +46,11 @@
                             <li class="list-group-item border-top-0">Order Manager</li>
                         </router-link>
                         
-                        <router-link to="/store/inward" class="text-decoration-none text-dark">
+                        <!-- <router-link to="/store/inward" class="text-decoration-none text-dark">
                             <li class="list-group-item border-top-0">Store Manager</li>
-                        </router-link>
+                        </router-link> -->
 
-                        <router-link to="/cutting/order" class="text-decoration-none text-dark">
+                        <router-link to="/cutting" class="text-decoration-none text-dark">
                             <li class="list-group-item border-top-0">Cutting Manager</li>
                         </router-link>
 
@@ -58,7 +58,7 @@
                             <li class="list-group-item border-top-0">Line Manager</li>
                         </router-link>
 
-                        <router-link to="/finishing/order" class="text-decoration-none text-dark">
+                        <router-link to="/finishing" class="text-decoration-none text-dark">
                             <li class="list-group-item border-top-0">Finishing Manager</li>
                         </router-link>
 
