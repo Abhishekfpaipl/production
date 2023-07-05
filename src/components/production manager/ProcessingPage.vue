@@ -519,13 +519,8 @@
                                             <div @click="sendMessage" class="ms-2 "><i
                                                     class="bi bi-telegram fs-2 text-primary"></i></div>
                                         </div>
-<<<<<<< HEAD
-                                        <button @click="sendMessage()" class="btn btn-outline-secondary w-100"
-                                            type="button">Send</button>
-=======
                                         <!-- <button @click="sendMessage" class="btn btn-outline-secondary w-100"
                                             type="button">Send</button> -->
->>>>>>> afca1c0df23bf5e745df1b8001cf3aa1d5d2c877
                                     </div>
                                 </div>
                             </div>
