@@ -343,6 +343,36 @@
                                         <td>3000</td>
                                         <td>8000</td>
                                     </tr>
+                                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <th scope="row"><img src="http://dillisix.com/storage/522/-20868.jpg"
+                                                class="rounded-circle "
+                                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
+                                        <td>1000</td>
+                                        <td>3000</td>
+                                        <td>6000</td>
+                                        <td>3000</td>
+                                        <td>8000</td>
+                                    </tr>
+                                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <th scope="row"><img src="http://dillisix.com/storage/522/-20868.jpg"
+                                                class="rounded-circle "
+                                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
+                                        <td>1000</td>
+                                        <td>3000</td>
+                                        <td>6000</td>
+                                        <td>3000</td>
+                                        <td>8000</td>
+                                    </tr>
+                                    <tr data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <th scope="row"><img src="http://dillisix.com/storage/522/-20868.jpg"
+                                                class="rounded-circle "
+                                                style="width: 35px; height: 35px; object-fit: cover;" alt=""></th>
+                                        <td>1000</td>
+                                        <td>3000</td>
+                                        <td>6000</td>
+                                        <td>3000</td>
+                                        <td>8000</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

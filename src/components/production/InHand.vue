@@ -79,6 +79,46 @@
                         <td>500</td>
                         <td>500</td>
                     </tr>
+                    <tr class="text-center">
+                        <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg" class="rounded-circle"
+                                style="width: 40px; height: 40px; object-fit: cover;" alt=""></th>
+                        <td>07 Jul</td>
+                        <td>1000</td>
+                        <td>500</td>
+                        <td>500</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg" class="rounded-circle"
+                                style="width: 40px; height: 40px; object-fit: cover;" alt=""></th>
+                        <td>07 Jul</td>
+                        <td>1000</td>
+                        <td>500</td>
+                        <td>500</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg" class="rounded-circle"
+                                style="width: 40px; height: 40px; object-fit: cover;" alt=""></th>
+                        <td>07 Jul</td>
+                        <td>1000</td>
+                        <td>500</td>
+                        <td>500</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg" class="rounded-circle"
+                                style="width: 40px; height: 40px; object-fit: cover;" alt=""></th>
+                        <td>07 Jul</td>
+                        <td>1000</td>
+                        <td>500</td>
+                        <td>500</td>
+                    </tr>
+                    <tr class="text-center">
+                        <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg" class="rounded-circle"
+                                style="width: 40px; height: 40px; object-fit: cover;" alt=""></th>
+                        <td>07 Jul</td>
+                        <td>1000</td>
+                        <td>500</td>
+                        <td>500</td>
+                    </tr>
 
                 </tbody>
             </table>

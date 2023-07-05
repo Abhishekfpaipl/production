@@ -39,6 +39,7 @@
                             </button>
 
                         </div>
+
                     </div>
                     <div class="collapse" id="collapseExample">
                         <img :src="`${publicPath}${activeOrder.img}`" style=" width: 100%;  object-fit: fill;">

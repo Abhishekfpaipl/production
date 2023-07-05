@@ -1,6 +1,6 @@
 <template>
     <!-- <ProductionLinks active="Order"></ProductionLinks> -->
-<TopNav>Production</TopNav>
+    <TopNav>Production</TopNav>
     <div class="mt-2">
         <div v-for="(order, index) in orders" :key="index"
             class="d-flex justify-content-between align-items-center border-bottom p-2">
@@ -13,29 +13,31 @@
                 </div>
             </div>
             <div class="text-success rounded">
-                <button class="btn btn-outline-success py-1 me-3">
-                    {{ order.status }}
-                </button>
+                <div v-if="accepted[index]">
+                    <BtnChange :order="order"></BtnChange>
+                </div>
+                <div class="" v-else>
+                    <button @click="acceptOrder(index)" class="btn btn-success">Accept</button>
+                </div>
             </div>
-
-
         </div>
     </div>
-     <ProductionBottomnav></ProductionBottomnav>
-    
+    <ProductionBottomnav></ProductionBottomnav>
 </template>
 
 <script>
 import TopNav from '../navbar/TopNav.vue';
 // import ProductionLinks from './ProductionLinks.vue';
 import ProductionBottomnav from '../navbar/ProductionBottomnav.vue';
+import BtnChange from '@/components/production/btn/BtnChange.vue';
 
 export default {
     name: "InwardPage",
-    components: { ProductionBottomnav, TopNav },
+    components: { ProductionBottomnav, TopNav, BtnChange },
     data() {
         return {
-            publicPath: process.env.BASE_URL
+            publicPath: process.env.BASE_URL,
+            accepted: []
         };
     },
     computed: {
@@ -43,8 +45,12 @@ export default {
             return this.$store.getters.getProductionOrder;
         }
     },
-   
+    methods: {
+        acceptOrder(index) {
+            this.accepted[index] = true;
+        }
+    }
+
 }
 </script>
-
-<style lang="scss" scoped></style>
+ 

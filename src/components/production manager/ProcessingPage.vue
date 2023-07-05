@@ -513,7 +513,7 @@
                                                 v-model="actionValue">
                                             <label for="floatingInput">Action Value</label>
                                         </div>
-                                        <button @click="sendMessage" class="btn btn-outline-secondary w-100"
+                                        <button @click="sendMessage()" class="btn btn-outline-secondary w-100"
                                             type="button">Send</button>
                                     </div>
                                 </div>
