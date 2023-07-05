@@ -39,7 +39,6 @@
                             </button>
 
                         </div>
-
                     </div>
                     <div class="collapse" id="collapseExample">
                         <img :src="`${publicPath}${activeOrder.img}`" style=" width: 100%;  object-fit: fill;">
@@ -70,11 +69,6 @@
                             </table>
                         </div>
                     </div>
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 671d9840cec16e4e25d7af6a2da71fe3b7a64c4f
                     <div class="accordion container" id="accordionPanelsStayOpenExample">
                         <h4 class="text-center mt-3">New Order</h4>
                         <div class="accordion-item mt-3">

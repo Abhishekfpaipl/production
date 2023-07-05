@@ -13,10 +13,10 @@
             </div>
         </div>
 
-       <div v-if="Object.keys(activeManager).length !== 0" class=""> 
+        <div v-if="Object.keys(activeManager).length !== 0" class="">
             <div class="offcanvas offcanvas-end show " data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                 aria-labelledby="offcanvasWithBackdropLabel">
-             
+
                 <div class="offcanvas-body pt-0 px-0">
                     <div class="container p-2">
                         <div class="d-flex justify-content-between">
@@ -248,10 +248,282 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed bg-success " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#allotment-order" aria-expanded="false"
+                                    aria-controls="allotment-order">
+                                    Order Assignment
+                                </button>
+                            </h2>
+                            <div id="allotment-order" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="body border border-2 border-success p-1 ">
+                                    <div class="container mt-4">
+                                        <select class="form-select mb-3" aria-label="Default select example">
+                                            <option selected>Select Catalog</option>
+                                            <option value="1">#124571</option>
+                                            <option value="2">#124572</option>
+                                            <option value="3">#124573</option>
+                                            <option value="4">#124574</option>
+                                            <option value="5">#124575</option>
+                                            <option value="6">#124576</option>
+                                        </select>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">Order Quantity</span>
+                                            <input style="background-color: #f8f9fa;" type="number" readonly value="1000"
+                                                class="form-control" aria-describedby="basic-addon1">
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon1">Available Quantity</span>
+                                            <input style="background-color: #f8f9fa;" type="number" readonly value="500"
+                                                class="form-control" aria-describedby="basic-addon1">
+                                        </div>
+                                        <select class="form-select my-3" aria-label="Default select example">
+                                            <option selected>Select Assignee</option>
+                                            <option value="1">Assignee 1</option>
+                                            <option value="2">Assignee 2</option>
+                                            <option value="3">Assignee 3</option>
+                                            <option value="4">Assignee 4</option>
+                                            <option value="5">Assignee 5</option>
+                                            <option value="6">Assignee 6</option>
+                                            <option value="1">Assignee 7</option>
+                                            <option value="2">Assignee 8</option>
+                                            <option value="3">Assignee 9</option>
+                                            <option value="4">Assignee 10</option>
+                                            <option value="5">Assignee 11</option>
+                                            <option value="6">Assignee 12</option>
+                                        </select>
+                                        <div class="form-floating mb-3">
+                                            <input type="number" class="form-control" id="floatingInput"
+                                                placeholder="Catalog Quantity">
+                                            <label for="floatingInput">Catalog Quantity</label>
+                                        </div>
+                                        <div class="d-flex w-100 my-3">
+                                            <div class="mb-2 mx-2 w-50">
+                                                <label for="date" class="form-label ms-1">Expected Date</label>
+                                                <input type="date" class="form-control" id="date">
+                                            </div>
+                                            <div class="mb-2  mx-2 w-50">
+                                                <label for="time" class="form-label ms-1">Expected Time</label>
+                                                <input type="time" class="form-control" id="time">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <button class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-3">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed bg-warning " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#production-status" aria-expanded="false"
+                                    aria-controls="production-status">
+                                    Production Status
+                                </button>
+                            </h2>
+                            <div id="production-status" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="body border border-2 border-warning p-1 ">
+                                    <div class=" mt-4 overflow-x-scroll">
+                                        <table class="table table-responsive table-striped table-hover ">
+                                            <thead>
+                                                <tr style="font-size: 13px;">
+                                                    <th class="py-3" scope="col">Catlg.</th>
+                                                    <th class="py-3" scope="col">Asign.</th>
+                                                    <th class="py-3" scope="col">Allot</th>
+                                                    <th class="py-3" scope="col">Due</th>
+                                                    <th class="py-3" scope="col">Loss</th>
+                                                    <th class="py-3" scope="col">Pending</th>
+                                                    <th class="py-3" scope="col">Allot</th>
+                                                    <th class="py-3" scope="col">Due</th>
+                                                    <th class="py-3" scope="col">Loss</th>
+                                                    <th class="py-3" scope="col">Pending</th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><img src="http://dillisix.com/storage/345/-23853.jpg"
+                                                            class="rounded-circle "
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </th>
+                                                    <td><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
+                                                            class="rounded-circle "
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </td>
+                                                    <td>3000</td>
+                                                    <td>6000</td>
+                                                    <td>3000</td>
+                                                    <td>8000</td>
+                                                    <td>3000</td>
+                                                    <td>6000</td>
+                                                    <td>3000</td>
+                                                    <td>8000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg"
+                                                            class="rounded-circle"
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </th>
+                                                    <td><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
+                                                            class="rounded-circle "
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </td>
+                                                    <td>3000</td>
+                                                    <td>6000</td>
+                                                    <td>5000</td>
+                                                    <td>2000</td>
+                                                    <td>3000</td>
+                                                    <td>6000</td>
+                                                    <td>5000</td>
+                                                    <td>2000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="http://dillisix.com/storage/534/-23870.jpg"
+                                                            class="rounded-circle"
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </th>
+                                                    <td><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
+                                                            class="rounded-circle "
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="http://dillisix.com/storage/345/-23853.jpg"
+                                                            class="rounded-circle "
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </th>
+                                                    <td><img src=" http://dillisix.com/storage/54/kedar.jpg"
+                                                            class="rounded-circle "
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </td>
+                                                    <td>3000</td>
+                                                    <td>6000</td>
+                                                    <td>3000</td>
+                                                    <td>8000</td>
+                                                    <td>3000</td>
+                                                    <td>6000</td>
+                                                    <td>3000</td>
+                                                    <td>8000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg"
+                                                            class="rounded-circle"
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </th>
+                                                    <td><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
+                                                            class="rounded-circle "
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </td>
+                                                    <td>3000</td>
+                                                    <td>6000</td>
+                                                    <td>5000</td>
+                                                    <td>2000</td>
+                                                    <td>3000</td>
+                                                    <td>6000</td>
+                                                    <td>5000</td>
+                                                    <td>2000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><img src="http://dillisix.com/storage/478/-23528.jpg"
+                                                            class="rounded-circle"
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </th>
+                                                    <td><img src="http://dillisix.com/storage/83/IMG20230404151417.jpg"
+                                                            class="rounded-circle "
+                                                            style="width: 40px; height: 40px; object-fit: cover;" alt="">
+                                                    </td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                    <td>1000</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ------------------- -->
+                        <div class="mt-3">
+                            <div class="d-flex align-items-center">
+                                <div class="border p-2 pb-3 bg-success text-white w-100" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExampleNew" aria-expanded="false"
+                                    aria-controls="collapseExampleNew">
+                                    Transaction History
+                                </div>
+                                <button type="button" class="d-flex btn btn-primary rounded-circle ms-2"
+                                    @click="showActionModal = !showActionModal">
+                                    <i class="bi bi-plus fs-3"></i>
+                                </button>
+                            </div>
+                            <div class="collapse show" id="collapseExampleNew">
+                                <ul class="message-list">
+                                    <li v-for="message in messages" :key="message.id" :class="message.type">
+                                        <div class="message">
+                                            <p class=" p-2 m-2 text-end"
+                                                style="border-radius: 15px 15px 5px 15px; background-color: #e8e8e8; word-wrap: break-word;">
+                                                <strong>{{ message.title }}</strong>: {{ message.text }}
+                                            </p>
+                                            <div class="text-end text-muted " style="font-size: 10px;">{{ message.timestamp
+                                            }}</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div v-if="showActionModal" class="modal fade show d-block" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="false">
+                            <div class="modal-dialog shadow">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Action</h5>
+                                        <button type="button" class="btn" aria-label="Close"
+                                            @click="showActionModal = !showActionModal">
+                                            <i class="bi bi-x fs-3"></i>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-check" v-for="(action_name, index) in inputList" :key="index">
+                                            <input class="form-check-input" :ID="'radio' + index" type="radio"
+                                                :value="action_name" v-model="actionName">
+                                            <label class="form-check-label" :for="'radio' + index">
+                                                <span class="text-capitalize">{{ action_name }}</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" placeholder="name@example.com"
+                                                v-model="actionValue">
+                                            <label for="floatingInput">Action Value</label>
+                                        </div>
+                                        <button @click="sendMessage" class="btn btn-outline-secondary w-100"
+                                            type="button">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ------------------- -->
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
 
     </div>
 </template>
@@ -262,26 +534,76 @@ export default {
     components: { ManagerLinks },
     data() {
         return {
-            publicPath: process.env.BASE_URL
+            publicPath: process.env.BASE_URL,
+            inputData: "",
+            actionName: [],
+            actionValue: '',
+            showActionModal: false,
+            inputList: ["balance", "ready", "send", "dispatched", "received", "message"],
+            displayData: "",
+            messages: [],
         };
     },
     computed: {
         managers() {
             return this.$store.getters.getManager;
         },
-        activeManager(){
+        activeManager() {
             return this.$store.getters.getActiveManager
         }
     },
-    methods:{
+    methods: {
         showManager(manager) {
             return this.$store.dispatch('selectManager', manager);
         },
         hideManager() {
             return this.$store.dispatch('hideManager');
-        }
+        },
+        sendMessage() {
+            if (this.actionValue.trim() !== '') {
+                const message = {
+                    id: Date.now(),
+                    text: this.actionValue,
+                    // title: this.actionName [0],
+                    title: this.actionName,
+                    timestamp: new Date().toLocaleTimeString(),
+                    type: 'outgoing', // Change to 'incoming' for received messages
+                };
+                this.messages.push(message);
+                // Clear the input value for the specific action
+                this.actionName = [];
+                this.actionValue = '';
+                this.showActionModal = false;
+            }
+        },
     }
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style  scoped>
+#scroll::-webkit-scrollbar {
+    background-color: none;
+    display: none;
+}
+
+
+table th:nth-child(1),
+
+.table td:nth-child(1) {
+    position: sticky;
+    left: 0;
+    background-color: #e8e8e8;
+    color: #373737;
+    z-index: 10;
+}
+
+table th:nth-child(2),
+
+.table td:nth-child(2) {
+    position: sticky;
+    left: 56px;
+    background-color: #e8e8e8;
+    color: #373737;
+    z-index: 10;
+}
+</style>
