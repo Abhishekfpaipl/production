@@ -70,7 +70,7 @@
                             <li class="list-group-item border-top-0">Fabricator</li>
                         </router-link>
 
-                        <router-link to="/users" class="text-decoration-none text-dark">
+                        <router-link to="/users/members" class="text-decoration-none text-dark">
                             <li class="list-group-item border-top-0">Users</li>
                         </router-link>
                        

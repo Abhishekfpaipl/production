@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right w-100 px-2">
+            <div class="w-100 px-2">
                 <div class=" ">
                     <form @submit="update" method="post">
                         <TextInputs name="Assignee Code" type="text" design="floating" v-model="form.Code" />
@@ -49,9 +49,9 @@
                         <TextInputs name="Confirm Password" type="password" design="floating"
                             v-model="form.ConfirmPassword" />
                         <!-- <div class="mb-3 border rounded p-2">
-                        <label for="formFile" class="form-label">Upload Profile Photo</label>
-                        <input class="form-control" type="file" id="formFile">
-                    </div> -->
+                            <label for="formFile" class="form-label">Upload Profile Photo</label>
+                            <input class="form-control" type="file" id="formFile">
+                        </div> -->
                         <div class="buttons d-flex mt-2">
                             <div type="Reset" class="btn btn-light w-100 border">Reset Fields</div>
                             <input @click="getData()" name="Get Data" type="submit" class="btn btn-light w-100 border"
@@ -107,14 +107,3 @@ export default {
 
 }
 </script>
-
-<style  scoped>
-@media only screen and (max-width: 600px) {
-    .right {
-        position: relative;
-        z-index: -1;
-        padding-bottom: 80px;
-
-    }
-}
-</style>

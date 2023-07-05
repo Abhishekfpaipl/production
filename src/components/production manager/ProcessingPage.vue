@@ -460,7 +460,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- ------------------- -->
+                        <!-- ---------Chat Page---------- -->
                         <div class="mt-3">
                             <div class="d-flex align-items-center">
                                 <div class="border p-2 pb-3 bg-success text-white w-100" data-bs-toggle="collapse"
@@ -478,7 +478,7 @@
                                     <li v-for="message in messages" :key="message.id" :class="message.type">
                                         <div class="message">
                                             <p class=" p-2 m-2 text-end"
-                                                style="border-radius: 15px 15px 5px 15px; background-color: #e8e8e8; word-wrap: break-word;">
+                                                style="border-radius: 15px 15px 0px 15px; background-color: #e8e8e8; word-wrap: break-word;">
                                                 <strong>{{ message.title }}</strong>: {{ message.text }}
                                             </p>
                                             <div class="text-end text-muted " style="font-size: 10px;">{{ message.timestamp
@@ -490,7 +490,7 @@
                         </div>
                         <div v-if="showActionModal" class="modal fade show d-block" tabindex="-1"
                             aria-labelledby="exampleModalLabel" aria-hidden="false">
-                            <div class="modal-dialog shadow">
+                            <div class="modal-dialog ">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel">Action</h5>
@@ -500,26 +500,37 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <div class="form-check" v-for="(action_name, index) in inputList" :key="index">
+                                        <div class="form-check border-bottom py-2" v-for="(action_name, index) in inputList" :key="index">
                                             <input class="form-check-input" :ID="'radio' + index" type="radio"
                                                 :value="action_name" v-model="actionName">
-                                            <label class="form-check-label" :for="'radio' + index">
+                                            <label class="form-check-label w-100" :for="'radio' + index">
                                                 <span class="text-capitalize">{{ action_name }}</span>
                                             </label>
                                         </div>
 
-                                        <div class="form-floating mb-3">
+                                        <!-- <div class="form-floating mb-3">
                                             <input type="text" class="form-control" placeholder="name@example.com"
                                                 v-model="actionValue">
                                             <label for="floatingInput">Action Value</label>
+                                        </div> -->
+                                        <div class=" d-flex bg-light p-2 align-items-center">
+                                            <input v-model="actionValue" type="text" class="form-control"
+                                                placeholder="Type your message..." />
+                                            <div @click="sendMessage" class="ms-2 "><i
+                                                    class="bi bi-telegram fs-2 text-primary"></i></div>
                                         </div>
+<<<<<<< HEAD
                                         <button @click="sendMessage()" class="btn btn-outline-secondary w-100"
                                             type="button">Send</button>
+=======
+                                        <!-- <button @click="sendMessage" class="btn btn-outline-secondary w-100"
+                                            type="button">Send</button> -->
+>>>>>>> afca1c0df23bf5e745df1b8001cf3aa1d5d2c877
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- ------------------- -->
+                        <!-- ---------Chat Page---------- -->
                     </div>
                 </div>
             </div>
@@ -605,5 +616,4 @@ table th:nth-child(2),
     background-color: #e8e8e8;
     color: #373737;
     z-index: 10;
-}
-</style>
+}</style>

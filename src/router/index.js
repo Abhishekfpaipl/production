@@ -20,8 +20,24 @@ const routes = [
   {
     path: "/users",
     name: "User",
-    component: () => import('@/components/user/MembersPage.vue'),
+    children:[
+      {
+        path:'members',
+        name:'User-Member',
+        component: () => import('@/components/user/MembersPage.vue'),
+      },
+      {
+        path:'create',
+        name:'User-Create',
+        component: () => import('@/components/user/CreateNew.vue'),
+      },
+    ]
   },
+  // {
+  //   path: "/users",
+  //   name: "User",
+  //   component: () => import('@/components/user/MembersPage.vue'),
+  // },
   {
     path: "/create-member",
     name: "CreateMember",
