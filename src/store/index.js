@@ -352,6 +352,7 @@ export default createStore({
         imgu: "img/members/jyoti.jpg"
       },
     ],
+    activeUser:{},
     manager: [
       {
         id: 1,
@@ -483,6 +484,9 @@ export default createStore({
     },
     getUsers(state) {
       return state.users
+    },
+    getActiveUser(state) {
+      return state.activeUser
     },
     getManager(state) {
       return state.manager
