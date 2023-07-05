@@ -150,18 +150,7 @@ const routes = [
       {
         path: 'processing',
         name: 'Production-Manager-Processing',
-        children: [
-          {
-            path: 'production',
-            name: 'Production-Manager-Processing-Production',
-            component: () => import('@/components/production manager/ProductionProcess.vue')
-          },
-          {
-            path: 'fabrication',
-            name: 'Production-Manager-Processing-Fabrication',
-            component: () => import('@/components/production manager/FabricationProcess.vue')
-          },
-        ]
+        component: () => import('@/components/production manager/ProcessingPage.vue')
       },
     ]
   }

@@ -9,7 +9,7 @@
         <router-link class="nav-link ws-nowarp" :to="{ name: 'Production-Manager-Allotment' }"
             :class="currentRouteName('Production-Manager-Allotment') ? 'active' : ''">Alloment</router-link>
 
-        <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Manager-Processing-Production' }"
+        <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Manager-Processing' }"
             :class="currentRouteName('Production-Manager-Processing') ? 'active' : ''">Processing </router-link>
 
         <router-link class="nav-link ws-nowarp " :to="{ name: 'Production-Manager-Collection-Production' }"
