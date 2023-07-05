@@ -1,32 +1,33 @@
 <template>
-    <OrderLinks></OrderLinks>
-    <div class="mt-2">
-        <div v-for="(order, index) in orders" :key="index" class="border-bottom p-2">
-            <div class="d-flex align-items-center" @click="showReadyOrder(order)">
-                <img :src="`${publicPath}${order.img}`" class="rounded-circle"
+    <ManagerLinks></ManagerLinks>
+    <div class=" ">
+        <div v-for="(manager, index) in managers" :key="index"
+            class="d-flex justify-content-between align-items-center border-bottom p-2">
+            <div class="d-flex align-items-center" @click="showManager(manager)">
+                <img :src="`${publicPath}${manager.img}`" class="rounded-circle"
                     style="height:60px;width:60px; object-fit: fill;">
                 <div class="ms-3">
-                    <b class="m-0">#{{ order.style }} | <span>Qty : {{ order.qty }}</span></b>
-                    <p class="m-0">{{ order.status }}</p>
+                    <p class="m-0 fw-bold">#{{ manager.style }} | <span>Qty : {{ manager.qty }}</span></p>
+                    <p class="m-0" style="font-size: 13px;">Exp. Date : {{ manager.date }}</p>
                 </div>
             </div>
         </div>
 
-        <div v-if="Object.keys(activeOrder).length !== 0" class="">
+       <div v-if="Object.keys(activeManager).length !== 0" class=""> 
             <div class="offcanvas offcanvas-end show " data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                 aria-labelledby="offcanvasWithBackdropLabel">
-                <!-- ---------------------- -->
+             
                 <div class="offcanvas-body pt-0 px-0">
                     <div class="container p-2">
                         <div class="d-flex justify-content-between">
-                            <img :src="`${publicPath}${activeOrder.img}`" class="rounded-circle"
+                            <img :src="`${publicPath}${activeManager.img}`" class="rounded-circle"
                                 style="height:60px;width:60px; object-fit: fill;">
                             <div class="d-flex flex-column ms-2" data-bs-toggle="collapse"
                                 data-bs-target="#collapseExample">
-                                <b class="m-0">#{{ activeOrder.style }} | <span>Bal : {{ activeOrder.ready }}
+                                <b class="m-0">#{{ activeManager.style }} | <span>Bal : {{ activeManager.bal }}
                                     </span>
                                 </b>
-                                <p class="m-0 text-success">{{ activeOrder.date }} | <span>{{ activeOrder.time }}
+                                <p class="m-0 text-success">{{ activeManager.date }} | <span>{{ activeManager.time }}
                                     </span>
                                 </p>
                             </div>
@@ -34,7 +35,7 @@
                                 aria-expanded="false" aria-controls="collapseExample">
                                 <i class="bi bi-chevron-down"></i>
                             </button>
-                            <button type="button" class="btn" @click="hideReadyOrder()">
+                            <button type="button" class="btn" @click="hideManager()">
                                 <i class="bi bi-x fs-4"></i>
                             </button>
 
@@ -42,29 +43,29 @@
 
                     </div>
                     <div class="collapse" id="collapseExample">
-                        <img :src="`${publicPath}${activeOrder.img}`" style=" width: 100%;  object-fit: fill;">
+                        <img :src="`${publicPath}${activeManager.img}`" style=" width: 100%;  object-fit: fill;">
                         <div class="box mt-2">
                             <table class="table table-striped table-hover">
                                 <tbody>
                                     <tr>
                                         <th scope="row">Name</th>
-                                        <td class="text-muted">{{ activeOrder.name }}</td>
+                                        <td class="text-muted">{{ activeManager.name }}</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Sale Price</th>
-                                        <td class="text-muted">{{ activeOrder.sp }}</td>
+                                        <td class="text-muted">{{ activeManager.sp }}</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Panna</th>
-                                        <td class="text-muted">{{ activeOrder.panna }}</td>
+                                        <td class="text-muted">{{ activeManager.panna }}</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Fc / Piece</th>
-                                        <td class="text-muted">{{ activeOrder.fc }}</td>
+                                        <td class="text-muted">{{ activeManager.fc }}</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Search Tags</th>
-                                        <td class="text-muted">{{ activeOrder.stag }}</td>
+                                        <td class="text-muted">{{ activeManager.stag }}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -250,50 +251,37 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
 
     </div>
 </template>
 
 <script>
-import OrderLinks from './OrderLinks.vue';
+import ManagerLinks from './ManagerLinks.vue';
 export default {
-    name: "NewPage",
-    components: { OrderLinks },
+    components: { ManagerLinks },
     data() {
         return {
             publicPath: process.env.BASE_URL
-        }
+        };
     },
     computed: {
-        orders() {
-            return this.$store.getters.getOrder;
+        managers() {
+            return this.$store.getters.getManager;
         },
-        activeOrder() {
-            return this.$store.getters.getActiveReadyOrder;
+        activeManager(){
+            return this.$store.getters.getActiveManager
         }
     },
-    methods: {
-        showReadyOrder(order) {
-            return this.$store.dispatch('selectReadyOrder', order);
+    methods:{
+        showManager(manager) {
+            return this.$store.dispatch('selectManager', manager);
         },
-        hideReadyOrder() {
-            return this.$store.dispatch('hideReadyOrder');
+        hideManager() {
+            return this.$store.dispatch('hideManager');
         }
-    },
+    }
 }
 </script>
-<style scoped>
-.accordion {
-    --bs-accordion-active-bg: none;
-}
 
-.accordion-button:focus {
-    border-color: none;
-    box-shadow: none;
-}
-
-.btn {
-    --bs-btn-border-width: none;
-}
-</style>
+<style lang="scss" scoped></style>

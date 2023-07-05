@@ -363,7 +363,13 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assign',
-        btn: ' btn-outline-success '
+        btn: ' btn-outline-success ',
+        sp: '200',
+        panna: '63 inc | 1.6002 Mtr',
+        fc: '230 Grm',
+        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
+        time: '06:30 pm',
+        bal: '900',
       },
       {
         id: 2,
@@ -375,7 +381,13 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assign',
-        btn: ' btn-outline-success '
+        btn: ' btn-outline-success ',
+        sp: '200',
+        panna: '63 inc | 1.6002 Mtr',
+        fc: '230 Grm',
+        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
+        time: '06:30 pm',
+        bal: '900',
       },
       {
         id: 3,
@@ -387,7 +399,13 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assign',
-        btn: ' btn-outline-success '
+        btn: ' btn-outline-success ',
+        sp: '200',
+        panna: '63 inc | 1.6002 Mtr',
+        fc: '230 Grm',
+        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
+        time: '06:30 pm',
+        bal: '900',
       },
       {
         id: 4,
@@ -399,7 +417,13 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assign',
-        btn: ' btn-outline-success '
+        btn: ' btn-outline-success ',
+        sp: '200',
+        panna: '63 inc | 1.6002 Mtr',
+        fc: '230 Grm',
+        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
+        time: '06:30 pm',
+        bal: '900',
       },
       {
         id: 5,
@@ -411,7 +435,13 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assign',
-        btn: ' btn-outline-success '
+        btn: ' btn-outline-success ',
+        sp: '200',
+        panna: '63 inc | 1.6002 Mtr',
+        fc: '230 Grm',
+        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
+        time: '06:30 pm',
+        bal: '900',
       },
       {
         id: 6,
@@ -423,9 +453,16 @@ export default createStore({
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assign',
-        btn: ' btn-outline-success '
+        btn: ' btn-outline-success ',
+        sp: '200',
+        panna: '63 inc | 1.6002 Mtr',
+        fc: '230 Grm',
+        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
+        time: '06:30 pm',
+        bal: '900',
       },
     ],
+    activeManager: {},
 
   },
   getters: {
@@ -449,6 +486,9 @@ export default createStore({
     },
     getManager(state) {
       return state.manager
+    },
+    getActiveManager(state){
+      return state.activeManager
     }
 
   },
@@ -464,6 +504,12 @@ export default createStore({
     },
     hideCuttingOrder(state) {
       state.activeCuttingOrder = {};
+    },
+    selectManager(state, manager) {
+      state.activeManager = manager;
+    },
+    hideManager(state) {
+      state.activeManager = {};
     }
   },
   actions: {
@@ -478,6 +524,12 @@ export default createStore({
     },
     hideCuttingOrder({ commit }) {
       commit('hideCuttingOrder')
+    },
+    selectManager({ commit }, manager) {
+      commit('selectManager', manager)
+    },
+    hideManager({ commit }) {
+      commit('hideManager')
     }
   },
   modules: {},
