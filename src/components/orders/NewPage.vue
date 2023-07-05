@@ -11,7 +11,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div v-if="Object.keys(activeOrder).length !== 0" class="">
             <div class="offcanvas offcanvas-end show " data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                 aria-labelledby="offcanvasWithBackdropLabel">
@@ -71,63 +71,7 @@
                         </div>
                     </div>
 
-                    <!-- <input type="file" capture="environment" accept="image/*"> -->
-
                     <div class="accordion container" id="accordionPanelsStayOpenExample">
-                        <!-- <div class="accordion-item mt-3">
-                            <div class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                                    aria-controls="panelsStayOpen-collapseOne">
-                                    <div class="d-flex">
-                                        <img :src="`${publicPath}${activeOrder.img}`" class="rounded-circle"
-                                            style="height:60px;width:60px; object-fit: fill;">
-                                        <div class="d-flex flex-column ms-2">
-                                            <b class="m-0">#{{ activeOrder.style }} | <span>Bal : {{ activeOrder.ready
-                                            }}</span></b>
-                                            <p class="m-0 text-success">{{ activeOrder.date }} | <span>{{ activeOrder.time
-                                            }}</span></p>
-                                        </div>
-                                    </div>
-                                </button>
-                            </div>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse "
-                                aria-labelledby="panelsStayOpen-headingOne">
-                                <div class="accordion-body">
-                                    <img :src="`${publicPath}${activeOrder.img}`" style=" width: 100%;  object-fit: fill;">
-                                    <div class="box mt-2">
-                                        <table class="table table-striped table-hover">
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">Name</th>
-                                                    <td>{{ activeOrder.name }}</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Sale Price</th>
-                                                    <td>{{ activeOrder.sp }}</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Panna</th>
-                                                    <td>{{ activeOrder.panna }}</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Fc / Piece</th>
-                                                    <td>{{ activeOrder.fc }}</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Search Tags</th>
-                                                    <td>{{ activeOrder.stag }}</td>
-
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                         <h4 class="text-center mt-3">New Order</h4>
                         <div class="accordion-item mt-3">
                             <h2 class="accordion-header" id="headingTwo">
@@ -335,44 +279,6 @@ export default {
     components: { OrderLinks },
     data() {
         return {
-            // progresses: [
-            //     {
-            //         name: 'New Order Posted',
-            //         color: 'text-success'
-            //     },
-            //     {
-            //         name: 'Accept Order',
-            //         color: 'text-danger'
-            //     },
-            //     {
-            //         name: 'Manager Has Accepted',
-            //         color: 'text-danger'
-            //     },
-            //     {
-            //         name: 'Material is Available At Godown',
-            //         color: 'text-danger'
-            //     },
-            //     {
-            //         name: 'Material is Arrange For Delivery',
-            //         color: 'text-danger'
-            //     },
-            //     {
-            //         name: 'Material Delivery To Assignee',
-            //         color: 'text-danger'
-            //     },
-            //     {
-            //         name: 'Production Has Started',
-            //         color: 'text-danger'
-            //     },
-            //     {
-            //         name: 'Order is Available For Dispatch',
-            //         color: 'text-danger'
-            //     },
-            //     {
-            //         name: 'Order Completely Dispatched',
-            //         color: 'text-danger'
-            //     },
-            // ],
             publicPath: process.env.BASE_URL
         }
     },
@@ -406,4 +312,5 @@ export default {
 
 .btn {
     --bs-btn-border-width: none;
-}</style>
+}
+</style>

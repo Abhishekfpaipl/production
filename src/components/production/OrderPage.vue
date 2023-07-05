@@ -1,5 +1,6 @@
 <template>
-    <ProductionLinks active="Order"></ProductionLinks>
+    <!-- <ProductionLinks active="Order"></ProductionLinks> -->
+<TopNav>Production</TopNav>
     <div class="mt-2">
         <div v-for="(order, index) in orders" :key="index"
             class="d-flex justify-content-between align-items-center border-bottom p-2">
@@ -20,16 +21,18 @@
 
         </div>
     </div>
+     <ProductionBottomnav></ProductionBottomnav>
     
 </template>
 
 <script>
-import ProductionLinks from './ProductionLinks.vue';
- 
+import TopNav from '../navbar/TopNav.vue';
+// import ProductionLinks from './ProductionLinks.vue';
+import ProductionBottomnav from '../navbar/ProductionBottomnav.vue';
 
 export default {
     name: "InwardPage",
-    components: { ProductionLinks },
+    components: { ProductionBottomnav, TopNav },
     data() {
         return {
             publicPath: process.env.BASE_URL

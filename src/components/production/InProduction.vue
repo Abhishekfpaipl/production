@@ -1,6 +1,8 @@
 <template>
     <div>
-        <ProductionLinks active="Order"></ProductionLinks>
+        <!-- <ProductionLinks active="Order"></ProductionLinks> -->
+        <TopNav>Production</TopNav>
+
         <div class="d-flex container py-3 border-bottom">
             <select class="form-select" aria-label="Default select example">
                 <option selected>All Departments</option>
@@ -108,7 +110,7 @@
                         <div class="d-flex  border-bottom pb-2 mb-2">
                             <img src="http://dillisix.com/storage/345/-23853.jpg"
                                 style="width: 130px; height: 100px; object-fit: cover;" alt="">
-                                <div class="ms-2 w-100">
+                            <div class="ms-2 w-100">
                                 <p class="fw-bold mb-1 fs-5"> Pocket Faux Leather Jacket </p>
                                 <p class="mb-1">Order Qty: <span> 1,000 pcs</span></p>
                                 <!-- <p class="fw-bold mb-0">Rate: <span class="fw-normal"> ₹ 50 + 50</span></p> -->
@@ -130,7 +132,7 @@
                                 <option selected>Select Department</option>
                                 <option value="1">Single Needle Operator</option>
                                 <option value="2">Over Lock Operator</option>
-                                 
+
                             </select>
                             <select class="form-select my-3" aria-label="Default select example">
                                 <option selected>Select Worker</option>
@@ -148,11 +150,13 @@
                                 <option value="6">Worker 12</option>
                             </select>
                             <div class="form-floating mb-3">
-                                <input type="number" readonly value="500"  class="form-control" id="floatingInput" placeholder="Available Quantity">
+                                <input type="number" readonly value="500" class="form-control" id="floatingInput"
+                                    placeholder="Available Quantity">
                                 <label for="floatingInput">Available Quantity</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="number" value="500" class="form-control" id="floatingInput" placeholder="Catalog Quantity">
+                                <input type="number" value="500" class="form-control" id="floatingInput"
+                                    placeholder="Catalog Quantity">
                                 <label for="floatingInput">Catalog Quantity</label>
                             </div>
                             <div class="d-flex w-100 my-3">
@@ -252,15 +256,16 @@
                 </div>
             </div>
         </div>
-
     </div>
+    <ProductionBottomnav></ProductionBottomnav>
 </template>
 
 <script>
-
-import ProductionLinks from './ProductionLinks.vue';
+import TopNav from '../navbar/TopNav.vue';
+// import ProductionLinks from './ProductionLinks.vue';
+import ProductionBottomnav from '../navbar/ProductionBottomnav.vue';
 export default {
-    components: { ProductionLinks }
+    components: { ProductionBottomnav, TopNav }
 }
 </script>
 

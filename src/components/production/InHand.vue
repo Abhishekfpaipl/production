@@ -1,6 +1,7 @@
 <template>
     <div>
-        <ProductionLinks active="Order"></ProductionLinks>
+        <!-- <ProductionLinks active="Order"></ProductionLinks> -->
+        <TopNav>Production</TopNav>
         <div class="d-flex container py-3 border-bottom">
             <select class="form-select" aria-label="Default select example">
                 <option selected>All Departments</option>
@@ -235,13 +236,17 @@
         </div>
 
     </div>
+    <ProductionBottomnav></ProductionBottomnav>
+    
 </template>
 
 <script>
 
-import ProductionLinks from './ProductionLinks.vue';
+// import ProductionLinks from './ProductionLinks.vue';
+import TopNav from '../navbar/TopNav.vue'
+import ProductionBottomnav from '../navbar/ProductionBottomnav.vue';
 export default {
-    components: { ProductionLinks }
+    components: { ProductionBottomnav, TopNav }
 }
 </script>
 
