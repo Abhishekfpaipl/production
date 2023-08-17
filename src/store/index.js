@@ -2,7 +2,7 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    order: [
+    orders: [
       {
         id: 1,
         img: 'img/catalog/img1.jpg',
@@ -118,72 +118,7 @@ export default createStore({
       },
     ],
     activeReadyOrder: {},
-    cutting: [
-      {
-        id: 1,
-        img: 'img/fabric/fab8.png',
-        name: 'Cheese Fabric',
-        stock: '10000',
-        price: '100',
-        colors: [
-          { id: 1, name: 'black', img: "img/fabric/fab1.png" },
-          { id: 2, name: 'red', img: "img/fabric/fab2.png" },
-          { id: 2, name: 'white', img: "img/fabric/fab3.png" },
-          { id: 2, name: 'green', img: "img/fabric/fab4.png" },
-          { id: 2, name: 'purple', img: "img/fabric/fab5.png" },
-        ],
-        sizes: [
-          { id: 1, name: 'S' },
-          { id: 2, name: 'M' },
-          { id: 3, name: 'L' },
-          { id: 4, name: 'F' },
-          { id: 5, name: 'XL' },
-        ],
-        status: 'Accept'
-      },
-      {
-        id: 2,
-        img: 'img/fabric/fab7.png',
-        name: 'Crepe Fabric',
-        stock: '10000',
-        price: '100',
-        status: 'Accept'
-      },
-      {
-        id: 3,
-        img: 'img/fabric/fab6.png',
-        name: 'Georgette Fabric',
-        stock: '10000',
-        price: '150',
-        status: 'Accept'
-      },
-      {
-        id: 4,
-        img: 'img/fabric/fab5.png',
-        name: 'Cotton Duck',
-        stock: '10000',
-        price: '150',
-        status: 'Accept'
-      },
-      {
-        id: 5,
-        img: 'img/fabric/fab4.png',
-        name: 'Georgette Fabric',
-        stock: '10000',
-        price: '150',
-        status: 'Accept'
-      },
-      {
-        id: 6,
-        img: 'img/fabric/fab3.png',
-        name: 'Cotton Duck',
-        stock: '10000',
-        price: '150',
-        status: 'Accept'
-      },
-    ],
-    activeCuttingOrder: {},
-    productionOrder: [
+    productions: [
       {
         id: 1,
         img: 'img/order/1.jpg',
@@ -251,116 +186,335 @@ export default createStore({
         btn: ' btn-outline-success '
       },
     ],
+    finishings: [
+      {
+        id: 1,
+        img: 'img/order/1.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 2,
+        img: 'img/order/2.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'In-Production',
+        btn: ' btn-outline-info '
+      },
+      {
+        id: 3,
+        img: 'img/order/3.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'In-Fabrication',
+        btn: ' btn-outline-warning '
+      },
+      {
+        id: 4,
+        img: 'img/order/4.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 5,
+        img: 'img/order/5.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 6,
+        img: 'img/order/6.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn: ' btn-outline-success '
+      },
+    ],
+    cuttings: [
+      {
+        id: 1,
+        img: 'img/order/1.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 2,
+        img: 'img/order/2.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'In-Production',
+        btn: ' btn-outline-info '
+      },
+      {
+        id: 3,
+        img: 'img/order/3.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'In-Fabrication',
+        btn: ' btn-outline-warning '
+      },
+      {
+        id: 4,
+        img: 'img/order/4.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 5,
+        img: 'img/order/5.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn: ' btn-outline-success '
+      },
+      {
+        id: 6,
+        img: 'img/order/6.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn: ' btn-outline-success '
+      },
+    ],
+    subfabs: [
+      {
+        id: 1,
+        img: 'img/order/1.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '1500',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'Assignee',
+        btn: ' btn-outline-success ',
+        time: '5:30 pm' ,
+        sizes: [
+          {
+            name: 'S',
+          },
+          {
+            name: 'M',
+          },
+          {
+            name: 'L',
+          },
+          {
+            name: 'XL',
+          },
+        ],
+        colors: [
+          {
+            bg: 'black',
+          },
+          {
+            bg: 'red',
+          },
+          {
+            bg: 'green',
+          },
+          {
+            bg: 'blue',
+          },
+        ],
+      },
+      {
+        id: 2,
+        img: 'img/order/2.jpg',
+        style: '23188',
+        qty: '1000',
+        costing: '1500',
+        status: 'Accept',
+        date: '15/05/23',
+        assign: 'In-Production',
+        btn: ' btn-outline-info ',
+        time: '5:30 pm' ,
+        sizes: [
+          {
+            name: 'S',
+          },
+          {
+            name: 'M',
+          },
+          {
+            name: 'L',
+          },
+          {
+            name: 'XL',
+          },
+        ],
+        colors: [
+          {
+            bg: 'black',
+          },
+          {
+            bg: 'red',
+          },
+          {
+            bg: 'green',
+          },
+          {
+            bg: 'blue',
+          },
+        ],  
+      },
+      
+    ],
     users: [
       {
         id: 1,
-        name: 'Kedar',
+        name: 'Mohan',
         role: 'Creator',
-        status: 'Access Granted',
+        rate: 50,
         dept: 'Fabricator',
         post: 'Manager',
         imgu: "img/members/jyoti.jpg"
       },
       {
         id: 2,
-        name: 'Amit Sardar',
+        name: 'Suresh',
         role: 'Admin',
-        status: 'Access Granted',
+        rate: 60,
         dept: 'Product Designer',
         post: 'Manager',
         imgu: "img/members/Kedar.jpg"
       },
       {
         id: 3,
-        name: 'Dheeraj Sardar',
+        name: 'Ramesh',
         role: 'Admin',
-        status: 'Access Granted',
+        rate: 70,
         dept: 'Fabricator',
         post: 'Manager',
         imgu: "img/members/Modern.jpg"
       },
       {
         id: 4,
-        name: 'jyoti Garments',
+        name: 'Dharmesh',
         role: 'Assignee',
-        status: 'Access Granted',
+        rate: 80,
         dept: 'Product Designer',
         post: 'Manager',
         imgu: "img/members/Narender.jpg"
       },
       {
         id: 4,
-        name: 'Narender',
+        name: 'Naresh',
         role: 'Manager',
-        status: 'Access Granted',
+        rate: 70,
         dept: 'Fabricator',
         post: 'Manager',
         imgu: "img/members/jyoti.jpg"
       },
       {
         id: 4,
-        name: 'Modern Collection',
+        name: 'Parkash',
         role: 'Assignee',
-        status: 'Access Granted',
+        rate: 60,
         dept: 'Fabricator',
         post: 'Manager',
         imgu: "img/members/Kedar.jpg"
       },
       {
         id: 5,
-        name: 'Adnan Siddiqui',
+        name: 'Hari',
         role: 'Assignee',
-        status: 'Access Granted',
+        rate: 50,
         dept: 'Fabricator',
         post: 'Manager',
         imgu: "img/members/jyoti.jpg"
       },
       {
         id: 6,
-        name: 'Hari Shankar',
+        name: 'Shankar',
         role: 'Assignee',
-        status: 'Access Granted',
+        rate: 80,
         dept: 'Fabricator',
         post: 'Manager',
         imgu: "img/members/jyoti.jpg"
       },
       {
         id: 7,
-        name: 'Hari Shankar',
+        name: 'Parshad',
         role: 'Assignee',
-        status: 'Access Granted',
+        rate: 90,
         dept: 'Fabricator',
         post: 'Manager',
         imgu: "img/members/jyoti.jpg"
       },
       {
         id: 8,
-        name: 'Hari Shankar',
+        name: 'Dharmender',
         role: 'Assignee',
-        status: 'Access Granted',
+        rate: 90,
         dept: 'Fabricator',
         post: 'Manager',
         imgu: "img/members/jyoti.jpg"
       },
       {
         id: 9,
-        name: 'Hari Shankar',
+        name: 'Rahul',
         role: 'Assignee',
-        status: 'Access Granted',
+        rate: 50,
         dept: 'Fabricator',
         post: 'Manager',
         imgu: "img/members/jyoti.jpg"
       },
     ],
-    activeUser:{},
-    manager: [
+    activeUser: {},
+    managers: [
       {
         id: 1,
         img: 'img/order/9.jpg',
-        name:'Sticker',
+        name: 'Sticker',
         style: '23188',
         qty: '1000',
-        costing: '',
+        costing: '1500',
         status: 'Accept',
         date: '15/05/23',
         assign: 'Assign',
@@ -371,116 +525,306 @@ export default createStore({
         stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
         time: '06:30 pm',
         bal: '900',
+        sizes: [
+          {
+            name: 'S',
+          },
+          {
+            name: 'M',
+          },
+          {
+            name: 'L',
+          },
+          {
+            name: 'XL',
+          },
+        ],
+        colors: [
+          {
+            bg: 'black',
+          },
+          {
+            bg: 'red',
+          },
+          {
+            bg: 'green',
+          },
+          {
+            bg: 'blue',
+          },
+        ],
+
       },
       {
         id: 2,
-        img: 'img/order/5.jpg',
-        name:'Embroidery',
-        style: '23188',
-        qty: '1000',
-        costing: '',
+        img: 'img/order/9.jpg',
+        name: 'Sticker',
+        style: '23189',
+        qty: '2000',
+        costing: '1700',
         status: 'Accept',
-        date: '15/05/23',
+        date: '18/05/23',
         assign: 'Assign',
         btn: ' btn-outline-success ',
-        sp: '200',
+        sp: '500',
         panna: '63 inc | 1.6002 Mtr',
         fc: '230 Grm',
         stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
         time: '06:30 pm',
         bal: '900',
+        sizes: [
+          {
+            name: 'S',
+          },
+          {
+            name: 'M',
+          },
+          {
+            name: 'L',
+          },
+          {
+            name: 'XL',
+          },
+        ],
+        colors: [
+          {
+            bg: 'black',
+          },
+          {
+            bg: 'red',
+          },
+          {
+            bg: 'green',
+          },
+          {
+            bg: 'blue',
+          },
+        ],
+
+      },
+     
+       
+    ],
+    tstatus: [
+      {
+        img: 'http://dillisix.com/storage/55/Amit.jpeg',
+        bal: 5000,
+        ready: 500,
+        send: 400,
+        disp: 300,
+        rec: 300,
       },
       {
-        id: 3,
-        img: 'img/order/3.jpg',
-        name:'Washing',
-        style: '23188',
-        qty: '1000',
-        costing: '',
-        status: 'Accept',
-        date: '15/05/23',
-        assign: 'Assign',
-        btn: ' btn-outline-success ',
-        sp: '200',
-        panna: '63 inc | 1.6002 Mtr',
-        fc: '230 Grm',
-        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
-        time: '06:30 pm',
-        bal: '900',
+        img: 'http://dillisix.com/storage/55/Amit.jpeg',
+        bal: 4700,
+        ready: 500,
+        send: 400,
+        disp: 300,
+        rec: 300,
       },
       {
-        id: 4,
-        img: 'img/order/4.jpg',
-        name:'Aman Solanki',
-        style: '23188',
-        qty: '1000',
-        costing: '',
-        status: 'Accept',
-        date: '15/05/23',
-        assign: 'Assign',
-        btn: ' btn-outline-success ',
-        sp: '200',
-        panna: '63 inc | 1.6002 Mtr',
-        fc: '230 Grm',
-        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
-        time: '06:30 pm',
-        bal: '900',
+        img: 'http://dillisix.com/storage/55/Amit.jpeg',
+        bal: 4400,
+        ready: 1000,
+        send: 600,
+        disp: 600,
+        rec: 600,
       },
       {
-        id: 5,
-        img: 'img/order/5.jpg',
-        name:'Aman Solanki',
-        style: '23188',
-        qty: '1000',
-        costing: '',
-        status: 'Accept',
-        date: '15/05/23',
-        assign: 'Assign',
-        btn: ' btn-outline-success ',
-        sp: '200',
-        panna: '63 inc | 1.6002 Mtr',
-        fc: '230 Grm',
-        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
-        time: '06:30 pm',
-        bal: '900',
+        img: 'http://dillisix.com/storage/55/Amit.jpeg',
+        bal: 3800,
+        ready: 800,
+        send: 800,
+        disp: 800,
+        rec: 800,
       },
       {
-        id: 6,
-        img: 'img/order/6.jpg',
-        name:'Aman Solanki',
-        style: '23188',
-        qty: '1000',
-        costing: '',
-        status: 'Accept',
-        date: '15/05/23',
-        assign: 'Assign',
-        btn: ' btn-outline-success ',
-        sp: '200',
-        panna: '63 inc | 1.6002 Mtr',
-        fc: '230 Grm',
-        stag: '23550, Tshirt, Chuwingum, Fab 30, Sakshi, Jr',
-        time: '06:30 pm',
-        bal: '900',
+        img: 'http://dillisix.com/storage/55/Amit.jpeg',
+        bal: 3000,
+        ready: 2000,
+        send: 1500,
+        disp: 1500,
+        rec: 1500,
+      },
+      {
+        img: 'http://dillisix.com/storage/55/Amit.jpeg',
+        bal: 500,
+        ready: 1500,
+        send: 1500,
+        disp: 1500,
+        rec: 1500,
       },
     ],
-    activeManager: {},
+    items: [
+      {
+        img: 'http://dillisix.com/storage/83/IMG20230404151417.jpg',
+        oid: 'A1',
+        id: '01',
+        issue: '9000',
+        issueDate: '09 jul',
+        due: '3000',
+        dueDate: '12 jul',
+        recv: '2900',
+        recvDate: '12/07',
+        loss: '100',
+        lossDate: '12/07',
+        bal: '6000',
+        balDate: '12/07',
+        received: {
+          collect: null,
+          loss: null,
+          date: null,
+        },
+        jobs: []
+      },
+      {
+        img: 'http://dillisix.com/storage/83/IMG20230404151417.jpg',
+        oid: 'A1',
+        id: '02',
+        issue: '9000',
+        issueDate: '09/07',
+        due: '3000',
+        dueDate: '12/07',
+        recv: '2900',
+        recvDate: '12/07',
+        loss: '100',
+        lossDate: '12/07',
+        bal: '6000',
+        balDate: '12/07',
+        received: {
+          collect: null,
+          loss: null,
+        },
+        jobs: [
+          {
+            collect: null,
+            loss: null,
+          }
+        ]
+      },
+      // {
+      //   img: 'http://dillisix.com/storage/54/kedar.jpg',
+      //   oid: 'B1',
+      //   id: '01',
+      //   issue: '9000',
+      //   issueDate: '09/07',
+      //   due: '3000',
+      //   dueDate: '12/07',
+      //   recv: '2900',
+      //   recvDate: '12/07',
+      //   loss: '100',
+      //   lossDate: '12/07',
+      //   bal: '6000',
+      //   balDate: '12/07'
+      // },
+      // {
+      //   img: 'http://dillisix.com/storage/54/kedar.jpg',
+      //   oid: 'B1',
+      //   id: '02',
+      //   issue: '9000',
+      //   issueDate: '09/07',
+      //   due: '3000',
+      //   dueDate: '12/07',
+      //   recv: '2900',
+      //   recvDate: '12/07',
+      //   loss: '100',
+      //   lossDate: '12/07',
+      //   bal: '6000',
+      //   balDate: '12/07'
+      // },
+      // {
+      //   img: 'http://dillisix.com/storage/53/narender-profile-image.jpeg',
+      //   oid: 'C1',
+      //   id: '01',
+      //   issue: '9000',
+      //   issueDate: '09/07',
+      //   due: '3000',
+      //   dueDate: '12/07',
+      //   recv: '2900',
+      //   recvDate: '12/07',
+      //   loss: '100',
+      //   lossDate: '12/07',
+      //   bal: '6000',
+      //   balDate: '12/07'
+      // },
+      // {
+      //   img: 'http://dillisix.com/storage/53/narender-profile-image.jpeg',
+      //   oid: 'C1',
+      //   id: '02',
+      //   issue: '9000',
+      //   issueDate: '09/07',
+      //   due: '3000',
+      //   dueDate: '12/07',
+      //   recv: '2900',
+      //   recvDate: '12/07',
+      //   loss: '100',
+      //   lossDate: '12/07',
+      //   bal: '6000',
+      //   balDate: '12/07'
+      // },
 
+    ],
+    issues: [
+      {
+        id: '01',
+        img: 'http://dillisix.com/storage/83/IMG20230404151417.jpg',
+        qty: '9000',
+        start_date: '2023-07-19',
+        due_date: '2023-07-21',
+        end_date: null,
+        received: {
+          collect: null,
+          loss: null,
+          date: null,
+        },
+        jobs: [],
+      },
+      {
+        id: '02',
+        img: 'http://dillisix.com/storage/54/kedar.jpg',
+        qty: '5000',
+        start_date: '2023-07-21',
+        due_date: '2023-07-24',
+        end_date: null,
+        received: {
+          collect: null,
+          loss: null,
+          date: null,
+        },
+        jobs: [],
+      }
+    ],
+    issuess: [
+      {
+        id: '01',
+        img: 'http://dillisix.com/storage/83/IMG20230404151417.jpg',
+        qty: '9000',
+        start_date: '2023-07-19',
+        due_date: '2023-07-21',
+        end_date: null,
+        received: {
+          collect: null,
+          loss: null,
+          date: null,
+        },
+        jobs: [],
+      },
+       
+    ],
+    activeItem: {}
   },
   getters: {
     getOrder(state) {
       return state.order
     },
-    getActiveReadyOrder(state) {
-      return state.activeReadyOrder
+    getIssues(state) {
+      return state.issues
     },
-    getCutting(state) {
-      return state.cutting
+    getIssuess(state) {
+      return state.issuess
     },
-    getActiveCuttingOrder(state) {
-      return state.activeCuttingOrder
-    },
-    getProductionOrder(state) {
-      return state.productionOrder
+    getItems(state) {
+      return state.items
     },
     getUsers(state) {
       return state.users
@@ -488,15 +832,59 @@ export default createStore({
     getActiveUser(state) {
       return state.activeUser
     },
-    getManager(state) {
-      return state.manager
+    getManagers(state) {
+      return state.managers
     },
-    getActiveManager(state){
-      return state.activeManager
-    }
+    getManager: (state) => (managerId) => {
+      let index = state.managers.findIndex(manager => manager.id == managerId);
+      return state.managers[index];
+    },
+    getStatus(state) {
+      return state.tstatus
+    },
+    getProductions(state) {
+      return state.productions
+    },
+    getProduction: (state) => (productionId) => {
+      let index = state.productions.findIndex(production => production.id == productionId);
+      return state.productions[index];
+    },
+    getFinishings(state) {
+      return state.finishings
+    },
+    getFinishing: (state) => (finishingId) => {
+      let index = state.finishings.findIndex(finishing => finishing.id == finishingId);
+      return state.finishings[index];
+    },
+    getCuttings(state) {
+      return state.cuttings
+    },
+    getCutting: (state) => (cuttingId) => {
+      let index = state.cuttings.findIndex(cutting => cutting.id == cuttingId);
+      return state.cuttings[index];
+    },
+    getSubfabs(state) {
+      return state.subfabs
+    },
+    getSubfab: (state) => (subfabId) => {
+      let index = state.cuttings.findIndex(subfab => subfab.id == subfabId);
+      return state.subfabs[index];
+    },
+    getActiveItem(state) {
+      return state.activeItem
+    },
+
 
   },
   mutations: {
+    stockIn(state, data) {
+      let index = state.issues.findIndex(issue => issue.id === data.issue.id);
+      state.issues[index].jobs.push(data.qty);
+    },
+    stockInn(state, data) {
+      let index = state.issuess.findIndex(issues => issues.id === data.issues.id);
+      state.issuess[index].jobs.push(data.qty);
+    },
     selectReadyOrder(state, order) {
       state.activeReadyOrder = order;
     },
@@ -514,9 +902,21 @@ export default createStore({
     },
     hideManager(state) {
       state.activeManager = {};
+    },
+    selectItem(state, item) {
+      state.activeItem = item;
+    },
+    hideItem(state) {
+      state.activeItem = {};
     }
   },
   actions: {
+    stockIn({ commit }, data) {
+      commit('stockIn', data)
+    },
+    stockInn({ commit }, data) {
+      commit('stockInn', data)
+    },
     selectReadyOrder({ commit }, order) {
       commit('selectReadyOrder', order)
     },
@@ -534,6 +934,12 @@ export default createStore({
     },
     hideManager({ commit }) {
       commit('hideManager')
+    },
+    selectItem({ commit }, item) {
+      commit('selectItem', item)
+    },
+    hideItem({ commit }) {
+      commit('hideItem')
     }
   },
   modules: {},

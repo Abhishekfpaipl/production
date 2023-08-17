@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import authRoutes from './auth';
 const routes = [
+  ...authRoutes,
   {
     path: "/",
     name: "home",
@@ -20,16 +22,21 @@ const routes = [
   {
     path: "/users",
     name: "User",
-    children:[
+    children: [
       {
-        path:'members',
-        name:'User-Member',
+        path: 'members',
+        name: 'User-Member',
         component: () => import('@/components/user/MembersPage.vue'),
       },
       {
-        path:'create',
-        name:'User-Create',
+        path: 'create',
+        name: 'User-Create',
         component: () => import('@/components/user/CreateNew.vue'),
+      },
+      {
+        path: '/detail',
+        name: 'User-Detail',
+        component: () => import('@/components/user/UserDetail.vue'),
       },
     ]
   },
@@ -80,6 +87,11 @@ const routes = [
     name: ' Cutting',
     component: () => import('@/components/cutting/CuttingPage.vue')
   },
+  {
+    path: "/cuttingdetail/:cuttingId",
+    name: "cuttingDetail",
+    component: () => import('@/components/cutting/CuttingDetail.vue')
+  },
 
   {
     path: '/production',
@@ -88,6 +100,11 @@ const routes = [
         path: 'order',
         name: 'Production-Order',
         component: () => import('@/components/production/OrderPage.vue')
+      },
+      {
+        path: "/ProductionPage/:productionId",
+        name: "productionOrderPage",
+        component: () => import('@/components/production/ProductionDetail.vue')
       },
       {
         path: 'processing',
@@ -127,6 +144,11 @@ const routes = [
     name: 'Finishing',
     component: () => import('@/components/finishing/FinishingPage.vue')
   },
+  {
+    path: "/finishingdetail/:finishingId",
+    name: "finishingDetail",
+    component: () => import('@/components/finishing/FinishingDetail.vue')
+  },
 
   {
     path: '/production-manager',
@@ -137,39 +159,25 @@ const routes = [
         component: () => import('@/components/production manager/OrderPage.vue')
       },
       {
-        path: 'allotment',
-        name: 'Production-Manager-Allotment',
-        component: () => import('@/components/production manager/AllotmentPage.vue')
+        path: "/DetailPage/:managerId",
+        name: "ProductionDetailPage",
+        component: () => import('@/components/production manager/PmDetailPage.vue')
       },
-      {
-        path: 'completed',
-        name: 'Production-Manager-Completed',
-        component: () => import('@/components/production manager/CompletedPage.vue')
-
-      },
-      {
-        path: 'collection',
-        name: 'Production-Manager-Collection',
-        children: [
-          {
-            path: 'production',
-            name: 'Production-Manager-Collection-Production',
-            component: () => import('@/components/production manager/ProductionPage.vue')
-          },
-          {
-            path: 'fabrication',
-            name: 'Production-Manager-Collection-Fabrication',
-            component: () => import('@/components/production manager/FabricationPage.vue')
-          },
-        ]
-      },
-      {
-        path: 'processing',
-        name: 'Production-Manager-Processing',
-        component: () => import('@/components/production manager/ProcessingPage.vue')
-      },
+       
+      
     ]
-  }
+  },
+
+  {
+    path: '/subfab',
+    name: 'Subfab',
+    component: () => import('@/components/subfab/SubfabPage.vue')
+  },
+  {
+    path: "/subfabdetail/:subfabId",
+    name: "subfabDetail",
+    component: () => import('@/components/subfab/SubfabDetail.vue')
+  },
 
 
 
